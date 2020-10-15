@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,900;1,100&display=swap');
+.navbar{
+    background: #4B6CB7 !important;
+    transition: all 0.2s;;
+}
+
+#particles-js {
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.bg-contact {
+    /* background-image: url(https://www.pxwall.com/wp-content/uploads/2018/08/highway-animated-wallpaper-4k-3840x2160.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; */
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    padding: 0px !important;
+}
+.text-color-title{
+    color: #fff;
+    text-shadow: 0 0 0.5em #87F, 0 0 0.5em #0575E6, 0 0 0.5em #0576e69e;
+}
+
+
+
+.title-section{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 6.2em;
+}
+.btn-rounded {
+    border-radius: 10em;
+}
+.section-hero{
+    padding: 200px 0px;
+    background: #0B152A !important;
+}
+.portofolio{
+    padding: 100px 0px;
+    background: #182848 !important;
+}
+.section-about{
+    padding: 200px 0px;
+    background: url('../img/sobremi.png') center center no-repeat;
+    background-size: cover;
+}
+.section-ui{
+    padding: 200px 0px;
+    background: url('../img/fina.png') center center no-repeat;
+    background-size: cover;
+}
+
+.section-maquetacion{
+    padding: 200px 0px;
+    background: url('../img/maquetacion.png') center center no-repeat;
+    background-size: cover;
+}
+.section-cta{
+    background: url('../img/maquetacion.png') center center no-repeat;
+    background-size: cover;
+}
+
+.contact-form{
+    padding: 255px 0px;
+    background: url('../img/form\ –\ 1.png') center center no-repeat;
+    background-size: cover;
+}
+/*MEDIA QUERY*/
+@media (min-width:992px){
+    .navbar{
+        background: transparent !important;
+    }
+    .footer{
+        position: absolute;
+        z-index: 9999;
+        width: 100%;
+        margin-top: -125px;
+    }
+}
+
+
+.color-gradient {
+    background: -webkit-gradient(linear, left top, left bottom, from(#68E1FD), to(#333));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#header .social-links a {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    line-height: 1;
+    margin-right: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
