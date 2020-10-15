@@ -23,6 +23,7 @@
     background-attachment: fixed; */
     background-color: rgba(0, 0, 0, 0.25) !important;
     padding: 0px !important;
+    border-radius: 25px;
 }
 .text-color-title{
     color: #fff;
@@ -48,12 +49,12 @@
     background: #182848 !important;
 }
 .section-about{
-    padding: 200px 0px;
+    /* padding: 200px 0px; */
     background: url('../img/sobremi.png') center center no-repeat;
     background-size: cover;
 }
 .section-ui{
-    padding: 200px 0px;
+    padding: 110px 0px;
     background: url('../img/fina.png') center center no-repeat;
     background-size: cover;
 }
@@ -93,16 +94,145 @@
     -webkit-text-fill-color: transparent;
 }
 
-#header .social-links a {
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.1);
+
+#owl-carousel-uiux .owl-prev {
+    left: -30px;
+}
+
+#owl-carousel-uiux .owl-next {
+    right: -30px;
+}
+
+#owl-carousel-uiux .owl-prev .owl-next {
+    position: absolute;
+    top: 30%;
+}
+
+#owl-carousel-uiux .owl-prev span,
+#owl-carousel-uiux .owl-next span {
+    font-size: 60px;
     color: #fff;
-    line-height: 1;
-    margin-right: 8px;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+}
+
+#owl-carousel-uiux .owl-prev span {
+    position: inherit;
+    left: 17px;
+    /* height: 10px; */
+    top: -22px;
+    z-index: 110;
+}
+
+#owl-carousel-uiux .owl-next span {
+    position: absolute;
+    right: 17px;
+    top: -20px;
+    z-index: 2;
+}
+
+#owl-carousel-uiux button.owl-prev {
+    background-color: #116f3b !important;
+    border-radius: 50% !important;
+    height: 50px !important;
+    width: 50px !important;
+    position: absolute !important;
+    left: -60px !important;
+    top: 45% !important;
+    z-index: 0;
+}
+
+#owl-carousel-uiux button.owl-next {
+    background-color: #116f3b !important;
+    border-radius: 50% !important;
+    height: 50px !important;
+    width: 50px !important;
+    position: absolute !important;
+    right: -60px !important;
+    top: 45% !important;
+    z-index: 0;
+}
+
+#owl-carousel-uiux button.owl-prev:focus,
+#owl-carousel-uiux button.owl-next:focus {
+    visibility: hidden;
+}
+
+/* slider 2 */
+
+#owl-carousel-maquetacion .owl-prev {
+    left: -30px;
+}
+
+#owl-carousel-maquetacion .owl-next {
+    right: -30px;
+}
+
+#owl-carousel-maquetacion .owl-prev .owl-next {
+    position: absolute;
+    top: 30%;
+}
+
+#owl-carousel-maquetacion .owl-prev span,
+#owl-carousel-maquetacion .owl-next span {
+    font-size: 60px;
+    color: #fff;
+}
+
+#owl-carousel-maquetacion .owl-prev span {
+    position: inherit;
+    left: 17px;
+    /* height: 10px; */
+    top: -22px;
+    z-index: 110;
+}
+
+#owl-carousel-maquetacion .owl-next span {
+    position: absolute;
+    right: 17px;
+    top: -20px;
+    z-index: 2;
+}
+
+#owl-carousel-maquetacion button.owl-prev {
+    background-color: #116f3b !important;
+    border-radius: 50% !important;
+    height: 50px !important;
+    width: 50px !important;
+    position: absolute !important;
+    left: -60px !important;
+    top: 45% !important;
+    z-index: 0;
+}
+
+#owl-carousel-maquetacion button.owl-next {
+    background-color: #116f3b !important;
+    border-radius: 50% !important;
+    height: 50px !important;
+    width: 50px !important;
+    position: absolute !important;
+    right: -60px !important;
+    top: 45% !important;
+    z-index: 0;
+}
+
+#owl-carousel-maquetacion button.owl-prev:focus,
+#owl-carousel-maquetacion button.owl-next:focus {
+    visibility: hidden;
+}
+
+.btn-agua {
+    background-color: #96CA37 !important;
+    color: #ffffff;
+}
+
+.btn-agua:hover {
+    background-color: #ffffff !important;
+    color: #96CA37;
+    border-color: #96CA37;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.logo {
+    width: 300px;
+    height: 100px;
+    transition: all 0.4s ease-in-out 0s;
 }
