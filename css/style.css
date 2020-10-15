@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,900;1,100&display=swap');
-.navbar{
+/* .navbar{
     background: #4B6CB7 !important;
     transition: all 0.2s;;
-}
+} */
 
 #particles-js {
     width: 100%;
@@ -25,65 +25,96 @@
     padding: 0px !important;
     border-radius: 25px;
 }
-.text-color-title{
+
+.text-color-title {
     color: #fff;
     text-shadow: 0 0 0.5em #87F, 0 0 0.5em #0575E6, 0 0 0.5em #0576e69e;
 }
 
 
 
-.title-section{
+.title-section {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 6.2em;
 }
+
 .btn-rounded {
     border-radius: 10em;
 }
-.section-hero{
+
+.section-hero {
     padding: 200px 0px;
     background: #0B152A !important;
 }
-.portofolio{
+
+.portofolio {
     padding: 100px 0px;
     background: #182848 !important;
 }
-.section-about{
+
+.section-about {
     /* padding: 200px 0px; */
     background: url('../img/sobremi.png') center center no-repeat;
     background-size: cover;
 }
-.section-ui{
+
+.section-ui {
     padding: 110px 0px;
     background: url('../img/fina.png') center center no-repeat;
     background-size: cover;
 }
 
-.section-maquetacion{
+.section-maquetacion {
     padding: 200px 0px;
     background: url('../img/maquetacion.png') center center no-repeat;
     background-size: cover;
 }
-.section-cta{
+
+.section-cta {
     background: url('../img/maquetacion.png') center center no-repeat;
     background-size: cover;
 }
 
-.contact-form{
+.contact-form {
     padding: 255px 0px;
     background: url('../img/form\ –\ 1.png') center center no-repeat;
     background-size: cover;
 }
+
 /*MEDIA QUERY*/
-@media (min-width:992px){
-    .navbar{
+@media (min-width:992px) {
+    /* .navbar {
         background: transparent !important;
-    }
-    .footer{
+    } */
+
+    .footer {
         position: absolute;
         z-index: 9999;
         width: 100%;
         margin-top: -125px;
+    }
+}
+
+@media (max-width:992px){
+    #logo-web{
+        width: 15.6rem !important;
+    }
+    .title-section{
+        font-size: 4.0em !important;
+        color: #fff !important;
+    }
+    #owl-carousel-uiux button.owl-prev {
+        display: none !important;
+    }
+    #owl-carousel-maquetacion button.owl-prev {
+        display: none !important;
+    }
+    #owl-carousel-uiux button.owl-next {
+        display: none !important;
+    }
+    #owl-carousel-maquetacion button.owl-next {
+        display: none !important;
     }
 }
 
@@ -228,6 +259,151 @@
     background-color: #ffffff !important;
     color: #96CA37;
     border-color: #96CA37;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+
+/* Header */
+
+#header .logo {
+    display: block;
+    border-bottom: 0;
+    color: inherit;
+    font-weight: 900;
+    letter-spacing: 0.35em;
+    margin: 0 0 2.5em 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+#header .logo>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* #header .logo .symbol {
+				margin-right: 0.65em;
+			} */
+
+#header .logo .symbol img {
+    display: block;
+    width: 2em;
+    height: 2em;
+}
+
+#header nav {
+    /* position: fixed; */
+    right: 2em;
+    top: 2em;
+    z-index: 10000;
+}
+
+#header nav ul {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#header nav ul li {
+    display: block;
+    padding: 0;
+}
+
+#header nav ul li a {
+    display: block;
+    position: relative;
+    height: 3em;
+    line-height: 3em;
+    padding: 0 1.5em;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    border: 0;
+    font-size: 0.8em;
+    font-weight: 900;
+    letter-spacing: 0.35em;
+    text-transform: uppercase;
+}
+
+#header nav ul li a[href="#menu"] {
+    -webkit-tap-highlight-color: transparent;
+    width: 4em;
+    text-indent: 4em;
+    font-size: 1em;
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;
+}
+
+#header nav ul li a[href="#menu"]:before,
+#header nav ul li a[href="#menu"]:after {
+    -moz-transition: opacity 0.2s ease;
+    -webkit-transition: opacity 0.2s ease;
+    -ms-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2em 2em;
+}
+
+#header nav ul li a[href="#menu"]:before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23f2849e%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
+    opacity: 0;
+}
+
+#header nav ul li a[href="#menu"]:after {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 8px%3B stroke: %23585858%3B %7D%3C/style%3E%3Cline x1='0' y1='25' x2='100' y2='25' /%3E%3Cline x1='0' y1='50' x2='100' y2='50' /%3E%3Cline x1='0' y1='75' x2='100' y2='75' /%3E%3C/svg%3E");
+    opacity: 1;
+}
+
+#header nav ul li a[href="#menu"]:hover:before {
+    opacity: 1;
+}
+
+#header nav ul li a[href="#menu"]:hover:after {
+    opacity: 0;
+}
+
+@media screen and (max-width: 736px) {
+    #header nav {
+        right: 0.5em;
+        top: 0.5em;
+    }
+
+    #header nav ul li a[href="#menu"]:before,
+    #header nav ul li a[href="#menu"]:after {
+        background-size: 1.5em 1.5em;
+    }
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: height 500ms, background 500ms;
+}
+
+.tiny .logo {
+    width: 180px !important;
+    height: 40px !important;
     transition: all 0.4s ease-in-out 0s;
 }
 

@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>ddweb.cl</title>
+  <title>Daniel Duarte | Web Design - Web Developer</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -57,11 +57,10 @@
 
   <!--Menu-->
   <header>
-    <nav class="navbar navbar-expand-md fixed-top d-none d-lg-block" id="navbar-desktop"
-      style="background: transparent; transition: all 0.4s ease-in-out 0s;">
+    <nav class="navbar navbar-expand-md fixed-top" id="navbar-desktop">
       <div class="container">
         <div class="logo">
-          <a href="https://www.aguangenko.cl"><img src="img/Logo-ngenko.png" id="logoagua"
+          <a href="#"><img src="img/logoddweb.png" id="logo-web"
               class="img-fluid animate__animated animate__fadeIn" alt=""></a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -72,21 +71,9 @@
         </button>
         <div class="collapse navbar-collapse animate__animated animate__fadeIn" id="navbarNav">
           <ul class="navbar-nav ml-auto mt-5 pt-1 mt-xl-0 pt-xl-0">
-            <li class="nav-item mx-auto active">
-              <a data-scroll="" class="nav-link" href="#inicio">Inicio</a>
-            </li>
-            <li class="nav-item mx-auto">
-              <a data-scroll="" class="nav-link" href="#nosotros">Nosotros</a>
-            </li>
-            <li class="nav-item mx-auto">
-              <a data-scroll="" class="nav-link" href="#productos">Productos</a>
-            </li>
-            <li class="nav-item mx-auto">
-              <a data-scroll="" class="nav-link" href="#contacto">Contacto</a>
-            </li>
             <div class="mx-auto ml-xl-3">
-              <button class="btn btn-agua btn-rounded" data-toggle="modal" data-target="#reservaModal">Reserva tu pedido
-                <i class="fab fa-whatsapp ml-2" style="font-size: 1.3em;"></i></button>
+              <button class="btn btn-agua btn-rounded" data-toggle="modal" data-target="#reservaModal">Enviar mensaje<i
+                  class="fab fa-whatsapp ml-2" style="font-size: 1.3em;"></i></button>
             </div>
           </ul>
         </div>
@@ -142,26 +129,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="card shadow-lg rounded">
-            <div class="card-body text-center">
-              <img src="img/profile.gif" alt="" width="200" height="130" class="rounded-circle shadow-lg">
-              <h5 class="display-4 text-secondary">Daniel Duarte </h5>
-              <h5 class="font-weight-bold h5 text-secondary">Ingeniero en informatica</h5>
-              <p class="lead text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
-                architecto at distinctio nihil perferendis nobis dolor rem, explicabo dolorem consequatur culpa quod,
-                dolorum odio accusamus fuga aperiam minus quis earum!</p>
-              <hr class="my-5">
-              <div class="row justify-content-center">
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
       <div class="container">
         <div class="row">
           <div class="col-xl-12 mt-2 ">
@@ -651,6 +618,19 @@
   <script src="library/jquery.min.js"></script>
   <script src="library/owl.carousel.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function () {
+
+    });
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+        $('#navbar-responsive').removeClass('navbar-transparent');
+      } else {
+        $('#navbar-responsive').addClass('navbar-transparent');
+      }
+    });
+  </script>
 </body>
 
 </html>
