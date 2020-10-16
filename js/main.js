@@ -2,13 +2,13 @@ $(document).ready(function() {
     AOS.init();
 
     $('#owl-carousel-uiux').owlCarousel({
-        autoplay: true,
-        autoplayHoverPaused: true,
+        autoplay: false,
+        autoplayHoverPaused: false,
         items: 1,
         nav: true,
         dots: false,
         loop: true,
-        dots: true,
+        dots: false,
         responsive: {
           0: {
             items: 1
@@ -25,7 +25,7 @@ $(document).ready(function() {
         autoplay: true,
         autoplayHoverPaused: true,
         items: 4,
-        nav: true,
+        nav: false,
         dots: false,
         loop: true,
         dots: true,
