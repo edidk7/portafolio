@@ -1,6 +1,17 @@
 $(document).ready(function() {
     AOS.init();
 
+    new fullpage('#fullPage', {
+      autoScrolling: true,
+      scrollOverflow:false,
+      scrollHorizontally:true,
+      navigation: true,
+      navigationTooltips:['Home','Blog','Aboutus'],
+      controlArrows: false,
+      slidesNavigation:true,
+      keyboardScrolling:true
+    })
+
     $('#owl-carousel-uiux').owlCarousel({
         autoplay: false,
         autoplayHoverPaused: false,

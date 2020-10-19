@@ -1,0 +1,45 @@
+:root {
+    font-family: 'Poppins', sans-serif;
+}
+
+.s1 {
+    padding: 80px 0px;
+    background: #0B152A !important;
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        text-align: center;
+        font-weight: 800;;
+    }
+}
+
+.s2 {
+    background: url('../img/sobremi.png') center center no-repeat;
+    background-size: cover;
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        text-align: center;
+    }
+}
+
+.s3 {
+    padding: 110px 0px;
+    background: url('../img/fina.png') center center no-repeat;
+    background-size: cover;
+}
+
+// span {
+//     background: #fff !important;
+// }
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span{
+    background:#fff;
+}
+
+.fp-slidesNav.fp-bottom{
+    margin-left:2em !important;
+}
