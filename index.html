@@ -24,6 +24,8 @@
   <link rel="stylesheet" href="library/owl.theme.default.min.css" type="text/css">
   <!-- FullPage JS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css">
+  <!-- Emojis -->
+  <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
   <!-- Style CSS -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/main.css">
@@ -33,8 +35,8 @@
   <meta name="author" content="Daniel Duarte - Desarrollador Web">
   <meta name="description" content="">
   <meta name="generator" content="HTML 5, CSS 3, Javascript">
-  <meta name="keywords" content="Diseño UI, UX, Desarrollo Web>
-  <meta name=" robots" content="index, follow">
+  <meta name="keywords" content="Diseño UI, UX, Desarrollo Web">
+  <meta name="robots" content="index, follow">
 
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -86,17 +88,69 @@
     <!--Section Hero-->
     <section class="section-hero">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6 text-center pb-5 text-light">
+        <div class="row justify-content-start mb-xl-5 mt-xl-5 pt-xl-5">
+          <div class="col-lg-9 text-left pb-5 text-light">
             <div class="box-text">
-              <h1 class="display-4 animate__animated animate__fadeIn">Bienvenido</h1>
+              <h1 class="typewrite title-section animate__animated animate__fadeIn" data-period="2000" data-type='[ "Hola, que tal ?", "Soy Daniel Duarte !", "Diseñador UI / UX ", "Desarrollador Front-end.", "I Love to Develop <3" ,"I am a human creative by the web ;)"]'></h1>
               <p class="lead animate__animated animate__fadeIn">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officiis corporis voluptas.
+                Experimentado en tecnologías.
+                <span class="ec ec-100" style="font-size: 2.3em;"></span>
+                <span class="ec ec-computer" style="font-size: 2.3em;"></span>
+                <span class="ec ec-rocket" style="font-size: 2.3em;"></span>
               </p>
-              <a href="" class="btn btn-info btn-rounded animate__animated animate__fadeIn">
-                <i class="fa fa-user ml-2 mr-2"></i> Conocer más
+              <button class="btn btn-agua btn-rounded" data-toggle="modal" data-target="#reservaModal">Contacto<i
+                class="fab fa-whatsapp ml-2" style="font-size: 1.3em;"></i></button>
+            </div>
+          </div>
+          <div class="col-lg-1 ml-auto">
+            <div class="container d-block d-lg-none mt-5 pt-5 p-5">
+              <div class="row justify-content-center">
+                <div class="col-4">
+                  <a href="https://www.behance.net/danielignacio1" style="text-decoration: none;" class="">
+                    <div class="media mb-xl-4 mb-3 mt-2">
+                      <i class="fab fa-behance icon-rrss"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="https://github.com/edidk7" style="text-decoration: none;" class="">
+                    <div class="media mb-xl-4 mt-xl-0 pt-xl-2 mb-3 mt-0">
+                      <i class="fab fa-github icon-rrss2"></i>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="https://www.linkedin.com/in/daniel-duarte-erices-005231101/" style="text-decoration: none;" class="">
+                    <div class="media mb-xl-4">
+                      <i class="fab fa-linkedin icon-rrss2"></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="container d-none d-lg-block">
+              <a href="https://www.behance.net/danielignacio1" style="text-decoration: none;" class="">
+                <div class="media mb-xl-4 mb-3">
+                  <i class="fab fa-behance icon-rrss"></i>
+                </div>
+              </a>
+              <a href="https://github.com/edidk7" style="text-decoration: none;" class="">
+                <div class="media mb-xl-4 mt-xl-0 pt-xl-2 mb-3 mt-5">
+                  <i class="fab fa-github icon-rrss2"></i>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/daniel-duarte-erices-005231101/" style="text-decoration: none;" class="">
+                <div class="media mb-xl-5 mt-xl-4">
+                  <i class="fab fa-linkedin icon-rrss2"></i>
+                </div>
               </a>
             </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-xl-5 mt-xl-5 pt-xl-5 mt-5 pt-5">
+          <div class="col-xl-3">
+            <a href="" class="scroll-down-link scroll-down-arrow" data-iconfont="ETmodules" data-icon>
+            </a>
           </div>
         </div>
       </div>
@@ -545,7 +599,7 @@
                 </div>
               </a>
               <div class="media mb-xl-4">
-                <i class="fab fa-behance" style="font-size: 2.5em; color:#fff;"></i>
+                <i class="fab fa-behance icon-rrss"></i>
                 <div class="media-body mt-xl-1 ml-4">
                   <h4 class="text-light">Behance</h4>
                   <p class="text-light lead">Danielignacio1</p>

@@ -4,6 +4,10 @@
     transition: all 0.2s;;
 } */
 
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 #particles-js {
     width: 100%;
     position: fixed;
@@ -35,8 +39,9 @@
 
 .title-section {
     font-family: 'Poppins', sans-serif;
+    text-shadow: 0 0 0.2em #87F, 0 0 0.5em #0575E6, 0 0 0.5em #0576e69e;
     font-weight: 700;
-    font-size: 6.2em;
+    font-size: 5.2em;
 }
 
 .btn-rounded {
@@ -44,8 +49,9 @@
 }
 
 .section-hero {
-    padding: 200px 0px;
-    background: #0B152A !important;
+    padding: 15.4em 0px;
+    background: url('../img/Hero.png') center center no-repeat;
+    background-size: cover;
 }
 
 .portofolio {
@@ -54,7 +60,7 @@
 }
 
 .section-about {
-    /* padding: 200px 0px; */
+    padding: 100px 0px;
     background: url('../img/sobremi.png') center center no-repeat;
     background-size: cover;
 }
@@ -101,7 +107,7 @@
         width: 15.6rem !important;
     }
     .title-section{
-        font-size: 4.0em !important;
+        font-size: 3.0em !important;
         color: #fff !important;
     }
     #owl-carousel-uiux button.owl-prev {
