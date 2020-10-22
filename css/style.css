@@ -88,48 +88,6 @@
     background-size: cover;
 }
 
-/*MEDIA QUERY*/
-@media (min-width:992px) {
-    /* .navbar {
-        background: transparent !important;
-    } */
-
-    .footer {
-        position: absolute;
-        z-index: 9999;
-        width: 100%;
-        margin-top: -125px;
-    }
-}
-
-@media (max-width:992px){
-    #logo-web{
-        width: 15.6rem !important;
-    }
-    .title-section{
-        font-size: 3.0em !important;
-        color: #fff !important;
-    }
-    #owl-carousel-uiux button.owl-prev {
-        display: none !important;
-    }
-    #owl-carousel-maquetacion button.owl-prev {
-        display: none !important;
-    }
-    #owl-carousel-uiux button.owl-next {
-        display: none !important;
-    }
-    #owl-carousel-maquetacion button.owl-next {
-        display: none !important;
-    }
-
-    .title-cta{
-        font-size: 2.8em !important;
-        color: #fff !important;
-    }
-}
-
-
 .color-gradient {
     background: -webkit-gradient(linear, left top, left bottom, from(#68E1FD), to(#333));
     -webkit-background-clip: text;
@@ -272,7 +230,6 @@
     border-color: #96CA37;
     transition: all 0.4s ease-in-out 0s;
 }
-
 
 /* Header */
 
@@ -423,6 +380,153 @@
     height: 100px;
     transition: all 0.4s ease-in-out 0s;
 }
-.btn-rrss:hover{
-    background-color: red;
+
+/* Header */
+
+header{
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+    text-shadow: 0 0 0.5em #87F, 0 0 0.5em #0575E6, 0 0 0.5em #0576e69e;
+    transition: all 0.5s ease;
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+    z-index: 9999999999;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+.navbar-nav > li > a {
+    padding: 5px 0;
+    font-weight: 400;
+    font-size: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.25s ease-in-out;
+    -moz-transition: border-color 0.25s ease-in-out;
+    -webkit-transition: border-color 0.25s ease-in-out;
+    -o-transition: border-color 0.25s ease-in-out;
+    -ms-transition: border-color 0.25s ease-in-out;
+}
+
+.navbar-nav.navbar-right {
+    margin-right:-5%;
+}
+
+.navbar-nav > li + li > a {
+    margin-left: 20px;
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > li.active > a,
+.nav > li > a:hover,
+.nav > li.active > a {
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+}
+
+.nav > li > a:focus {
+    background-color: transparent;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar-light .navbar-nav .nav-item.active .nav-link{
+    color: #fff;
+    text-shadow: 0 0 0.5em #87F, 0 0 0.5em #0575E6, 0 0 0.5em #0576e69e;
+} */
+
+/* .nav-item{
+    font-weight: 400;
+    font-size: 1em;
+    text-transform: uppercase;
+
+}
+.nav-link{
+    float: left;
+    position: relative;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+.nav-link::after{
+    background-color: #fff;
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 15px;
+    bottom: 0;
+    transition: width 0.35s ease 0s;
+    position: absolute;
+}
+
+.nav-link:hover::after {
+    width: 75%;
+  }
+
+
+
+.navbar-light .navbar-nav .nav-item .nav-link{
+    color: #fff;
+    padding: 5px 15px;
+}
+
+.navbar-light .navbar-toggler{
+    border: none;
+    color:#fff;
+    border: 2px solid #7f7f7f;
+    border-radius: 0;
+}
+
+/*MEDIA QUERY*/
+@media (min-width:992px) {
+    /* .navbar {
+        background: transparent !important;
+    } */
+
+    .footer {
+        position: absolute;
+        z-index: 9999;
+        width: 100%;
+        margin-top: -125px;
+    }
+}
+
+@media (max-width:992px){
+
+    /* .navbar{
+        background: #fff;
+    }
+    .navbar-collapse{
+        background: #fff;
+    } */
+    
+    #logo-web{
+        width: 15.6rem !important;
+    }
+    .title-section{
+        font-size: 3.0em !important;
+        color: #fff !important;
+    }
+    #owl-carousel-uiux button.owl-prev {
+        display: none !important;
+    }
+    #owl-carousel-maquetacion button.owl-prev {
+        display: none !important;
+    }
+    #owl-carousel-uiux button.owl-next {
+        display: none !important;
+    }
+    #owl-carousel-maquetacion button.owl-next {
+        display: none !important;
+    }
+
+    .title-cta{
+        font-size: 2.8em !important;
+        color: #fff !important;
+    }
 }

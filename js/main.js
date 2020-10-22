@@ -1,6 +1,12 @@
 $(document).ready(function() {
     AOS.init();
 
+
+    $(document).on('click', '.nav-item a', function (e) {
+      $(this).parent().addClass('active').siblings().removeClass('active');
+  });
+
+    navBarDesktop();
     effectToWritte();
 
     new fullpage('#fullPage', {
@@ -57,7 +63,8 @@ $(document).ready(function() {
 
 });
 
-$(window).scroll(function() {
+function navBarDesktop(){
+  $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll < 50) {
         console.log("muestra la wea");
@@ -67,7 +74,6 @@ $(window).scroll(function() {
     } else {
         $('.fixed-top').css('background', '#182848');
         $('.fixed-top').css('border-bottom', '1px solid #8393B4');
-        $('.nav-link').css('background', '#');
         $('.fixed-top').css('transition', 'all 0.4s ease-in-out 0s');
 
     }
@@ -79,7 +85,7 @@ $(window).scroll(function() {
         $('.navbar').addClass('tiny');
     }
 });
-
+}
 function effectToWritte(){
   var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
