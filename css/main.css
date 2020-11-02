@@ -48,7 +48,7 @@
 
 .scroll-down-link {
   position: absolute;
-  z-index: 100;
+  z-index: 98;
   cursor: pointer;
   height: 60px;
   width: 80px;
@@ -98,14 +98,14 @@
 }
 
 .icon-rrss {
-  font-size: 2.8em;
+  font-size: 2.5em;
   color: #fff !important;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .icon-rrss2 {
-  font-size: 3.2em;
+  font-size: 2.9em;
   color: #fff !important;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;

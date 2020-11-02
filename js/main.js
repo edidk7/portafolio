@@ -1,5 +1,10 @@
 $(document).ready(function() {
-    AOS.init();
+    AOS.init({
+      // offset: 120,
+	    // delay: 800,
+	    // duration: 400,
+	    // easing: 'ease'
+    });
 
 
     $(document).on('click', '.nav-item a', function (e) {
@@ -8,6 +13,7 @@ $(document).ready(function() {
 
     navBarDesktop();
     effectToWritte();
+    moveElementMouse();
 
     new fullpage('#fullPage', {
       autoScrolling: true,
@@ -20,6 +26,28 @@ $(document).ready(function() {
       keyboardScrolling:true
     })
 
+    $('#owl-carousel-about').owlCarousel({
+      autoplay: true,
+      autoplayHoverPaused: false,
+      items: 1,
+      margin:2,
+      autoplayTimeout:10000,
+      nav: false,
+      dots: false,
+      loop: false,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    });
     $('#owl-carousel-uiux').owlCarousel({
         autoplay: false,
         autoplayHoverPaused: false,
@@ -62,6 +90,21 @@ $(document).ready(function() {
       });
 
 });
+
+function moveElementMouse(){
+  var object1=$('#object1');
+
+  var layer=$('#layer');
+
+  layer.mousemove(function (e){
+    var valueX=(e.pageX * -1 / 30);
+    var valueY=(e.pageY * -1 / 30);
+
+    object1.css({
+      'transform':'translate3d('+valueX+'px,'+valueY+'px,0) rotate(20deg)'
+    });
+  });
+}
 
 function navBarDesktop(){
   $(window).scroll(function() {

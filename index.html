@@ -12,7 +12,6 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Fonts Awesome -->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"> -->
-
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <!-- Animate CSS -->
@@ -26,7 +25,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css">
   <!-- Emojis -->
   <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
-
   <!-- Style CSS -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/main.css">
@@ -38,7 +36,6 @@
   <meta name="generator" content="HTML 5, CSS 3, Javascript">
   <meta name="keywords" content="Diseño UI, UX, Desarrollo Web">
   <meta name="robots" content="index, follow">
-
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -64,13 +61,13 @@
   }
 </style>
 
-<body data-spy="scroll" data-target="#navbar-example2">
+<body id="layer" data-spy="scroll" data-target="#navbar-example2">
   <!--Menu-->
   <header>
     <nav id="navbar-example2" class="navbar navbar-expand-md navbar-light fixed-top d-none d-lg-block">
       <div class="container">
         <div class="logo">
-          <a href="#"><img src="img/logoddweb.png" id="logo-web" class="img-fluid animate__animated animate__fadeIn"
+          <a href="#"><img src="img/logo.png" id="logo-web" class="img-fluid animate__animated animate__fadeIn"
               alt=""></a>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -85,27 +82,30 @@
               <a class="nav-link active" data-scroll href="#section1">Home</a>
             </li>
             <li class="nav-item ml-1">
-              <a class="nav-link" data-scroll href="#section2">Sobre mí</a>
+              <a class="nav-link" data-scroll href="#section2">Servicios</a>
             </li>
             <li class="nav-item ml-1">
-              <a class="nav-link" data-scroll href="#section3">Portafolio</a>
+              <a class="nav-link" data-scroll href="#section3">Sobre mí</a>
             </li>
             <li class="nav-item ml-1">
-              <a class="nav-link" data-scroll href="#section4">Contacto</a>
+              <a class="nav-link" data-scroll href="#">Portafolio</a>
+            </li>
+            <li class="nav-item ml-1">
+              <a class="nav-link" data-scroll href="#">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </header>
-  <div>
+  <main>
     <section id="section1" class="section-hero">
       <div class="container">
-        <div class="row justify-content-start mb-xl-5 mt-xl-5 pt-xl-5">
+        <div class="row justify-content-start mb-xl-0 mt-xl-5 pt-xl-5 mt-lg-5">
           <div class="col-lg-10 text-left pb-5 text-light">
             <div class="box-text">
               <h1 class="typewrite title-section animate__animated animate__fadeIn" data-period="2000"
-              data-type='[ "Hola, que tal ?", "Soy Daniel Duarte !", "Diseñador UI / UX ", "Desarrollador Front-end.", "I Love to Develop <3" ,"Young creative by the web!"]'>
+                data-type='[ "Hola, que tal ?", "Soy Daniel Duarte !", "Diseñador UI / UX ", "Desarrollador Front-end.", "I Love to Develop <3" ,"Young creative by the web!"]'>
               </h1>
               <p class="lead animate__animated animate__fadeIn mt-xl-3">
                 Experimentado en tecnologías.
@@ -113,12 +113,12 @@
                 <span class="ec ec-computer" style="font-size: 2.3em;"></span>
                 <span class="ec ec-rocket" style="font-size: 2.3em;"></span>
               </p>
-              <button class="btn btn-agua btn-rounded" data-toggle="modal" data-target="#reservaModal">Conocer
-                más</button>
+              <a class="btn btn-agua btn-rounded" data-scroll href="#section2">Conocer
+                más</a>
             </div>
           </div>
           <div class="col-lg-1 ml-auto">
-            <div class="container d-block d-lg-none mt-5 pt-5 p-5">
+            <div class="container d-block d-lg-none mt-0 mt-5 pt-5 p-5 p-sm-5 pt-sm-5">
               <div class="row justify-content-center">
                 <div class="col-4">
                   <a href="https://www.behance.net/danielignacio1" style="text-decoration: none;" class="">
@@ -157,14 +157,14 @@
               </a>
               <a href="https://www.linkedin.com/in/daniel-duarte-erices-005231101/" style="text-decoration: none;"
                 class="">
-                <div class="media mb-xl-5 mt-xl-4">
+                <div class="media mb-xl-5 mt-xl-4 ml-1">
                   <i class="fab fa-linkedin icon-rrss2"></i>
                 </div>
               </a>
             </div>
           </div>
         </div>
-        <div class="row justify-content-center mb-xl-5 mt-xl-5 pt-xl-5 mt-5 pt-5">
+        <div class="row justify-content-center mb-xl-5 mt-lg-0 mt-xl-5 pt-xl-5 mt-5 pt-0">
           <div class="col-xl-3">
             <a href="" class="scroll-down-link scroll-down-arrow" data-iconfont="ETmodules" data-icon>
             </a>
@@ -172,218 +172,74 @@
         </div>
       </div>
     </section>
-    <section id="section2" class="section-about">
-      <div class="container mb-5">
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="box-text text-light">
-              <h1 class="title-section animate__animated animate__fadeIn">Sobre mí</h1>
-              <p class="lead font-weigh-light animate__animated animate__fadeIn ">
-                Nacido en Santiago de Chile, titulado como <b>Analista Programador</b> e <b>Ingeniería en
-                  Informática</b>. Me desempeño como diseñador y programador web de sitios de imagen corporativa,
-                sistemas corporativos y aplicaciones web a medida del cliente. En el último semestre de para finalizar
-                mi carrera, decidí ganar más experiencia en el campo laboral trabajando como desarrollador web en una
-                Agencia de Marketing Digital de Providencia, Santiago.
-              </p>
-              <p class="lead text-light">
-                Durante mi paso en la agencia y mi siguiente empleo como analista programador en una empresa dedicada a
-                la inteligencia de negocios y desarrollo de software, aprendí lo necesario y por sobre todo mejoré mis
-                habilidades de desarrollador en sitios web de alta calidad, también aprendí la importancia de lo que es
-                el trabajo en equipo con metodologías agiles, valor del feedback, ideas, entre otros. Actualmente
-                trabajando como desarrollador independiente(Freelance), dedicándome al rubro de sistemas web funcionales
-                y de calidad.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4 pt-lg-5 mt-lg-5">
-            <img src="img/profile.gif" width="" alt="" class="img-fluid mb-3">
-            <img src="img/profile2.gif" width="" alt="" class="img-fluid">
-          </div>
-        </div>
-      </div>
+    <section id="section2" class="section-services">
       <div class="container">
         <div class="row">
-          <div class="col-xl-12 mt-2 ">
+          <div class="col-xl-12 mt-2 mb-xl-5">
             <div class="row">
-              <div class="col-xl-4 mb-5" data-aos="fade-up" data-aos-duration="900">
+              <div class="col-12 pt-xl-5 mt-xl-5 mb-xl-0 pt-0 mt-0 mb-5">
+                <h1 class="title-section text-light mb-xl-5" data-aos="fade-right" data-aos-duration="900"
+                  data-aos-offset="60">Servicios</h1>
+              </div>
+              <div class="col-xl-4 col-md-4 mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="100">
                 <div class="media">
-                  <i class="fas fa-paint-brush mr-3 text-light" style="font-size: 3.5em;"></i>
+                  <i class="fas fa-paint-brush mr-3 text-light" style="font-size: 2.0em;"></i>
                   <div class="media-body">
-                    <h3 class="font-weight-bold text-light">UI / UX</h3>
-                    <p class="text-light">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
-                      sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra
-                      turpis.</p>
+                    <h3 class="font-weight-light text-light">UI / UX</h3>
+                    <p class="text-light font-weight-light">Diseño de <b>interfacez</b> y <b>experiencias</b> acordes al
+                      contexto y utilidad del proyecto.</p>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 mb-5" data-aos="fade-up" data-aos-duration="900">
+              <div class="col-xl-4 col-md-4 mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="150">
                 <div class="media">
-                  <i class="fas fa-laptop-code mr-3 text-light" style="font-size: 3.5em;"></i>
+                  <i class="fas fa-laptop-code mr-3 text-light" style="font-size: 2.0em;"></i>
                   <div class="media-body">
-                    <h3 class="font-weight-bold text-light">Maquetación</h3>
-                    <p class="text-light">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
-                      sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra
-                      turpis.</p>
+                    <h3 class="font-weight-light text-light">Maquetación</h3>
+                    <p class="text-light font-weight-light">Protipado de los wireframes y assets en codigo utilizando
+                      lenguajes de programacion web.</p>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 mb-5" data-aos="fade-up" data-aos-duration="900">
+              <div class="col-xl-4 col-md-4 mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="200">
                 <div class="media">
-                  <i class="fas fa-brain mr-3 text-light" style="font-size: 3.5em;"></i>
+                  <i class="fas fa-brain mr-3 text-light" style="font-size: 2.0em;"></i>
                   <div class="media-body">
-                    <h3 class="font-weight-bold text-light">Front-end</h3>
-                    <p class="text-light">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
-                      sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra
-                      turpis.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row pt-xl-2">
-              <div class="col-xl-4 mb-5" data-aos="fade-up" data-aos-duration="900">
-                <div class="media">
-                  <i class="fas fa-server mr-3 text-light" style="font-size: 3.5em;"></i>
-                  <div class="media-body">
-                    <h3 class="font-weight-bold text-light">Back-end</h3>
-                    <p class="text-light">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
-                      sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra
-                      turpis.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4 mb-5" data-aos="fade-up" data-aos-duration="900">
-                <div class="media">
-                  <i class="fas fa-database mr-3 text-light" style="font-size: 3.5em;"></i>
-                  <div class="media-body">
-                    <h3 class="font-weight-bold text-light">Base de Datos</h3>
-                    <p class="text-light">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
-                      sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra
-                      turpis.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4 mb-5" data-aos="fade-up" data-aos-duration="900">
-                <div class="media">
-                  <i class="fab fa-github mr-3 text-light" style="font-size: 3.5em;"></i>
-                  <div class="media-body">
-                    <h3 class="font-weight-bold text-light">Gestion de proyectos</h3>
-                    <p class="text-light">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
-                      sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra
-                      turpis.</p>
+                    <h3 class="font-weight-light text-light">Front-end</h3>
+                    <p class="text-light font-weight-light">Desarrollo de logica y comportamiento de componentes por
+                      partes del flujo de la experiencia del usuario.</p>
                   </div>
                 </div>
               </div>
             </div>
             <div class="row pt-xl-2">
-              <div class="col-xl-4 mb-5" data-aos="fade-up" data-aos-duration="900">
+              <div class="col-xl-4 col-md-4 mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="210">
                 <div class="media">
-                  <i class="fab fa-html5 mr-3 text-light" style="font-size: 3.5em;"></i>
+                  <i class="fas fa-server mr-3 text-light" style="font-size: 2.0em;"></i>
                   <div class="media-body">
-                    <h5 class="font-weight-light text-light">HTML5 </h5>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%">95%</div>
-                    </div>
+                    <h3 class="font-weight-light text-light">Back-end</h3>
+                    <p class="text-light font-weight-light">Desarrollo de API's y modulos de logica utilizando lenguajes
+                      de programación.</p>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 mb-5" data-aos="fade-up" data-aos-duration="900">
+              <div class="col-xl-4 col-md-4 mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="220">
                 <div class="media">
-                  <i class="fab fa-css3-alt mr-3 text-light" style="font-size: 3.5em;"></i>
+                  <i class="fas fa-database mr-3 text-light" style="font-size: 2.0em;"></i>
                   <div class="media-body">
-                    <h5 class="font-weight-light text-light">CSS3</h5>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
-                    </div>
+                    <h3 class="font-weight-light text-light">Base de Datos</h3>
+                    <p class="text-light font-weight-light">Desarollo de modelos relacionales y/no relacioles de
+                      arquitetucras de tablas o patrones de diseños.</p>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 mb-5" data-aos="fade-up" data-aos-duration="900">
+              <div class="col-xl-4 col-md-4 mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="230">
                 <div class="media">
-                  <i class="fab fa-js mr-3 text-light" style="font-size: 3.5em;"></i>
+                  <i class="fab fa-github mr-3 text-light" style="font-size: 2.0em;"></i>
                   <div class="media-body">
-                    <h5 class="font-weight-light text-light">JavaScript</h5>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row pt-xl-2">
-              <div class="col-xl-4 mb-5" data-aos="fade-up" data-aos-duration="900">
-                <div class="media">
-                  <i class="fab fa-bootstrap mr-3 text-light" style="font-size: 3.5em;"></i>
-                  <div class="media-body">
-                    <h5 class="font-weight-light text-light">Bootstrap</h5>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4 mb-5" data-aos="fade-up" data-aos-duration="900">
-                <div class="media">
-                  <i class="fab fa-sass mr-3 text-light" style="font-size: 3.5em;"></i>
-                  <div class="media-body">
-                    <h5 class="font-weight-light text-light">Sass/Less</h5>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4 mb-5" data-aos="fade-up" data-aos-duration="900">
-                <div class="media">
-                  <i class="fab fa-vuejs mr-3 text-light" style="font-size: 3.5em;"></i>
-                  <div class="media-body">
-                    <h5 class="font-weight-light text-light">Vue JS</h5>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row pt-xl-2">
-              <div class="col-xl-4 mb-5" data-aos="fade-up" data-aos-duration="900">
-                <div class="media">
-                  <i class="fab fa-wordpress mr-3 text-light" style="font-size: 3.5em;"></i>
-                  <div class="media-body">
-                    <h5 class="font-weight-light text-light">Wordpress</h5>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4 mb-5" data-aos="fade-up" data-aos-duration="900">
-                <div class="media">
-                  <i class="fab fa-laravel mr-3 text-light" style="font-size: 3.5em;"></i>
-                  <div class="media-body">
-                    <h5 class="font-weight-light text-light">Laravel</h5>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-4 mb-5" data-aos="fade-up" data-aos-duration="900">
-                <div class="media">
-                  <i class="fab fa-git-alt mr-3 text-light" style="font-size: 3.5em;"></i>
-                  <div class="media-body">
-                    <h5 class="font-weight-light text-light">Git</h5>
-                    <div class="progress">
-                      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
-                    </div>
+                    <h3 class="font-weight-light text-light">Testing QA</h3>
+                    <p class="text-light font-weight-light">Supervision de codigo utilizando herramientas de testing en
+                      los repositorios de los proyectos.</p>
                   </div>
                 </div>
               </div>
@@ -392,7 +248,428 @@
         </div>
       </div>
     </section>
-    <section id="section3" class="section-ui">
+    <section id="section3" class="section-aboutus">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mt-5 pt-5 ">
+            <h1 class="title-section text-light" data-aos="fade-right" data-aos-duration="900" data-aos-offset="60">
+              Sobre mí</h1>
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-xl-7" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100" >
+            <div id="owl-carousel-about" class="owl-carousel owl-theme mt-xl-0" >
+              <div class="item">
+                <div class="row mb-xl-0 mt-xl-0">
+                  <div class="col-12">
+                    <div class="box-text text-light">
+                      <p class="text-light font-weight-light">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse excepturi similique molestias
+                        rerum fugiat modi quisquam ipsam dolores ipsa? Odio cumque assumenda modi vero sunt iusto aut explicabo
+                        obcaecati ex?<br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-xl-3">
+                  <div class="col-12 col-sm-6 mt-0 pt-3 col-md-6">
+                    <div class="media">
+                      <i class="fa fa-user mr-3 text-light" style="font-size: 1.2em;"></i>
+                      <div class="media-body">
+                        <h5 class="font-weight-normal text-light">Nombre</h5>
+                        <p class="font-weight-light text-light">Daniel Duarte Erices</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 mt-2 pt-3 col-md-6">
+                    <div class="media">
+                      <i class="fas fa-envelope mr-3 text-light" style="font-size: 1.2em;"></i>
+                      <div class="media-body">
+                        <h5 class="font-weight-normal text-light">Email</h5>
+                        <p class="font-weight-light text-light">d.ignacio299@icloud.com</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mt-xl-3">
+                  <div class="col-12 col-sm-6 mt-xl-0 pt-xl-0 mt-2 pt-3 col-md-6">
+                    <div class="media">
+                      <i class="fa fa-phone mr-3 text-light" style="font-size: 1.2em;"></i>
+                      <div class="media-body">
+                        <h5 class="font-weight-normal text-light">Telefono</h5>
+                        <p class="font-weight-light text-light">+569 8202 9354</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 mt-xl-0 pt-xl-0 mt-2 pt-3 col-md-6">
+                    <div class="media">
+                      <i class="fab fa-linkedin mr-3 text-light" style="font-size: 1.2em;"></i>
+                      <div class="media-body">
+                        <h5 class="font-weight-normal text-light">LinkedIn</h5>
+                        <p class="font-weight-light text-light">Daniel Duarte Erices</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row pt-xl-5 mt-xl-0 mt-3">
+                  <div class="col-xl-4 col-12 col-sm-6 mb-5">
+                    <div class="media">
+                      <i class="fab fa-html5 mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <p class="font-weight-light text-light">HTML5 </p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%">95%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-12 col-sm-6 mb-5">
+                    <div class="media">
+                      <i class="fab fa-css3-alt mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <p class="font-weight-light text-light">CSS3</p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-12 col-sm-6 mb-5">
+                    <div class="media">
+                      <i class="fab fa-js mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <p class="font-weight-light text-light">JavaScript</p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-12 col-sm-6 mb-5">
+                    <div class="media">
+                      <i class="fab fa-bootstrap mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <p class="font-weight-light text-light">Bootstrap</p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-12 col-sm-6 mb-5">
+                    <div class="media">
+                      <i class="fab fa-sass mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <p class="font-weight-light text-light">Sass</p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-12 col-sm-6 mb-5">
+                    <div class="media">
+                      <i class="fab fa-vuejs mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <p class="font-weight-light text-light">Vue JS</p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="row pt-xl-5 mt-xl-0 mt-3">
+                  <div class="col-xl-4 col-12 col-sm-6 mb-5">
+                    <div class="media">
+                      <i class="fab fa-wordpress mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <p class="font-weight-light text-light">Wordpress</p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-12 col-sm-6 mb-5">
+                    <div class="media">
+                      <i class="fab fa-php mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <p class="font-weight-light text-light">PHP</p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-12 col-sm-6 mb-5">
+                    <div class="media">
+                      <i class="fab fa-laravel mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <p class="font-weight-light text-light">Laravel</p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-12 col-sm-6 mb-5">
+                    <div class="media">
+                      <i class="fab fa-github mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <p class="font-weight-light text-light">Github</p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-12 col-sm-6 mb-5">
+                    <div class="media">
+                      <i class="fab fa-git-alt mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <p class="font-weight-light text-light">Git</p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 col-12 col-sm-6 mb-5">
+                    <div class="media">
+                      <i class="fab fa-figma mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <p class="font-weight-light text-light">Figma</p>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <div class="row mt-xl-4 pt-xl-3 mb-5 mt-xl-0 mt-xl-0 pt-xl-0 mt-3 pt-3">
+              <div id="object1" class="col-12 d-none d-xl-block">
+                <img src="img/about_rocket.png" class="img-fluid w-90" alt="" data-aos="fade-right"
+                  data-aos-duration="1000" data-aos-offset="200">
+              </div>
+              <div class="buttons-about mt-xl-0 mx-auto">
+                <button class="btn btn-agua btn-rounded" data-aos="fade-up" data-aos-duration="900"
+                  data-aos-offset="100">Descargar CV</button>
+                <a class="btn btn-secondary btn-rounded ml-3" data-aos="fade-up" data-aos-duration="900"
+                  data-aos-offset="100" data-scroll href="#section5">Contactar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="section4" class="section-skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 mt-5 pt-5 ">
+            <h1 class="title-section text-light" data-aos="fade-right" data-aos-duration="900" data-aos-offset="60">
+              Skills</h1>
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-lg-12 mt-2">
+            <div class="row mt-xl-5">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-xl-4 mb-5">
+                    <div class="media">
+                      <i class="fab fa-html5 mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <h5 class="font-weight-light text-light">HTML5 </h5>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%">95%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 mb-5">
+                    <div class="media">
+                      <i class="fab fa-css3-alt mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <h5 class="font-weight-light text-light">CSS3</h5>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 mb-5">
+                    <div class="media">
+                      <i class="fab fa-js mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <h5 class="font-weight-light text-light">JavaScript</h5>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row pt-xl-2">
+                  <div class="col-xl-4 mb-5">
+                    <div class="media">
+                      <i class="fab fa-bootstrap mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <h5 class="font-weight-light text-light">Bootstrap</h5>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 mb-5">
+                    <div class="media">
+                      <i class="fab fa-sass mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <h5 class="font-weight-light text-light">Sass</h5>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 mb-5">
+                    <div class="media">
+                      <i class="fab fa-vuejs mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <h5 class="font-weight-light text-light">Vue JS</h5>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row pt-xl-2">
+                  <div class="col-xl-4 mb-5">
+                    <div class="media">
+                      <i class="fab fa-wordpress mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <h5 class="font-weight-light text-light">Wordpress</h5>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 mb-5">
+                    <div class="media">
+                      <i class="fab fa-php mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <h5 class="font-weight-light text-light">PHP</h5>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 mb-5">
+                    <div class="media">
+                      <i class="fab fa-laravel mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <h5 class="font-weight-light text-light">Laravel</h5>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="row pt-xl-2">
+                  <div class="col-xl-4 mb-5">
+                    <div class="media">
+                      <i class="fab fa-github mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <h5 class="font-weight-light text-light">Github</h5>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 mb-5">
+                    <div class="media">
+                      <i class="fab fa-git-alt mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <h5 class="font-weight-light text-light">Git</h5>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4 mb-5">
+                    <div class="media">
+                      <i class="fab fa-figma mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <div class="media-body">
+                        <h5 class="font-weight-light text-light">Figma</h5>
+                        <div class="progress">
+                          <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <style>
+
+
+      #layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+    <section id="section4" class="section-works">
       <div class="container mb-5">
         <div class="row mb-xl-5">
           <div class="col-lg-12">
@@ -526,7 +803,7 @@
         </div>
       </div>
     </section>
-    <section id="section4" class="contact-form">
+    <section id="section5" class="contact-form">
       <div class="container mb-5">
         <div class="row">
           <div class="col-lg-12">
@@ -630,7 +907,7 @@
         </div>
       </div>
     </section>
-  </div>
+  </main>
 
   <div id="particles-js"></div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
