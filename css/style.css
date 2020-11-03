@@ -244,18 +244,6 @@
     visibility: hidden;
 }
 
-.btn-agua {
-    background-color: #96CA37 !important;
-    color: #ffffff;
-}
-
-.btn-agua:hover {
-    background-color: #ffffff !important;
-    color: #96CA37;
-    border-color: #96CA37;
-    transition: all 0.4s ease-in-out 0s;
-}
-
 /* Header */
 
 #header .logo {
