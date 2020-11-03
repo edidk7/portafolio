@@ -40,8 +40,8 @@
 .title-section {
     font-family: 'Poppins', sans-serif;
     text-shadow: 0 0 0.2em #87F, 0 0 0.5em #0575E6, 0 0 0.5em #0576e69e;
-    font-weight: 700;
-    font-size: 4.2em;
+    font-weight: 400;
+    font-size: 3.0em;
 }
 
 .btn-rounded {
@@ -49,42 +49,67 @@
 }
 
 .section-hero {
-    padding: 15.4em 0px;
-    background: url('../img/Hero.png') center center no-repeat;
+    padding: 9.4em 0px;
+    background: url(../img/Services.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    max-he: 100%;
+}
+
+.bg-shadow{
+    height: 100%;
+    background: -webkit-linear-gradient(to right, rgba(37,37,37,0.90), rgba(37,37,37,0.1));
+    background: linear-gradient(to right, rgba(37,37,37,0.90), rgba(37,37,37,0.1));
+}
+
+.section-services {
+    padding: 0px 0px;
+    background-image: url(../img/Services.png);
+    background-size: cover;
+}
+.section-aboutus{
+    padding: 0px 0px;
+    background-image: url(../img/sobremi.png);
     background-size: cover;
 }
 
-.portofolio {
-    padding: 100px 0px;
-    background: #182848 !important;
-}
+.owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 0px;
+  }
 
-.section-about {
-    padding: 100px 0px;
-    background: url('../img/sobremi.png') center center no-repeat;
+@media (min-width: 1920px){
+    .section-aboutus{
+        padding: 10px 0px;
+        background-color: orange;
+        background-size: cover;
+    }
+}
+.section-skills{
+    padding: 0px 0px;
+    background-color: #0C0F14;
     background-size: cover;
 }
-
-.section-ui {
+.section-works {
     padding: 110px 0px;
-    background: url('../img/fina.png') center center no-repeat;
+    background-color: #0C0F14;
     background-size: cover;
 }
 
 .section-maquetacion {
     padding: 200px 0px;
-    background: url('../img/maquetacion.png') center center no-repeat;
+    background-color: #0C0F14;
     background-size: cover;
 }
 
 .section-cta {
-    background: url('../img/maquetacion.png') center center no-repeat;
+    background-color: #2C3037;
     background-size: cover;
 }
 
 .contact-form {
     padding: 255px 0px;
-    background: url('../img/form\ –\ 1.png') center center no-repeat;
+    background-color: #2C3037;
     background-size: cover;
 }
 
@@ -370,7 +395,7 @@
 }
 
 .tiny .logo {
-    width: 180px !important;
+    width: 100px !important;
     height: 40px !important;
     transition: all 0.4s ease-in-out 0s;
 }
@@ -403,10 +428,10 @@ header{
 }
 .navbar-nav > li > a {
     padding: 5px 0;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 1em;
     color: #fff;
-    text-transform: uppercase;
+    text-transform: none;
     border-bottom: 2px solid transparent;
     transition: border-color 0.25s ease-in-out;
     -moz-transition: border-color 0.25s ease-in-out;
@@ -504,6 +529,10 @@ header{
     .navbar-collapse{
         background: #fff;
     } */
+
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: 0px;
+      }
     
     #logo-web{
         width: 15.6rem !important;
