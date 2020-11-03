@@ -1,5 +1,37 @@
 :root {
     font-family: 'Poppins', sans-serif;
+    --principal: rgba(85, 85, 85, 0.665);
+    --blue: #1e90ff;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--principal);
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--blue);
+    border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(85, 85, 85, 0.453);
+}
+
+
+.btn-principal {
+    background: var(--principal);
+    color: #fff;
+    transition: all 0.5s ease;
+    &:hover{
+        background-color: #ffffff !important;
+        color: var(--principal);
+        transition: all 0.5s ease;
+        text-shadow: 0 0 0.2em #fff, 0 0 0.5em #0575E6, 0 0 0.5em #0576e69e;
+        box-shadow: 0 0 0.2em #fff, 0 0 0.5em #0575E6, 0 0 0.5em #0576e69e;
+        border-color: var(--principal);
+        transition: all 0.4s ease-in-out 0s;
+    }
 }
 
 .s1 {
