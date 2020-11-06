@@ -88,10 +88,19 @@
               <a class="nav-link" data-scroll href="#section3">Sobre mí</a>
             </li>
             <li class="nav-item ml-1">
-              <a class="nav-link" data-scroll href="#">Portafolio</a>
+              <a class="nav-link" data-scroll href="#section4">Portafolio</a>
             </li>
             <li class="nav-item ml-1">
-              <a class="nav-link" data-scroll href="#">Contacto</a>
+              <a class="nav-link" data-scroll href="#section5">Contacto</a>
+            </li>
+            <li class="nav-item ml-2">
+              <div class="ml-3">  
+                <a href="https://wa.me/56982029354?text=Necesito%20asesoramiento%20para%20un%20proyecto%20web%20" target="_blank" style="text-decoration: none;" class="">
+                  <div class="media btn-rrss">
+                    <i class="fab fa-whatsapp icon-wsp" style="font-size: 2.0em; color:#fff;"></i>
+                  </div>
+                </a>
+              </div>
             </li>
           </ul>
         </div>
@@ -102,19 +111,14 @@
     <section id="section1" class="section-hero">
       <div class="container">
         <div class="row justify-content-start mb-xl-0 mt-xl-5 pt-xl-5 mt-lg-5">
-          <div class="col-lg-10 text-left pb-5 text-light">
+          <div class="col-lg-10 text-left pb-5">
             <div class="box-text">
-              <h1 class="typewrite title-section animate__animated animate__fadeIn" data-period="2000"
-                data-type='[ "Hola, que tal ?", "Soy Daniel Duarte !", "Diseñador UI / UX ", "Desarrollador Front-end.", "I Love to Develop <3" ,"Young creative by the web!"]'>
-              </h1>
               <p class="lead animate__animated animate__fadeIn mt-xl-3">
                 Experimentado en tecnologías.
-                <span class="ec ec-100" style="font-size: 2.3em;"></span>
-                <span class="ec ec-computer" style="font-size: 2.3em;"></span>
-                <span class="ec ec-rocket" style="font-size: 2.3em;"></span>
               </p>
-              <a class="btn btn-principal btn-rounded" data-scroll href="#section2">Conocer
-                más</a>
+              <h1 class="text-light typewrite title-section animate__animated animate__fadeIn" data-period="2000"
+                data-type='[ "Hola, que tal ?", "Soy Daniel Duarte !", "Diseñador UI / UX ", "Desarrollador Front-end.", "I Love to Develop <3" ,"Young creative by the web!"]'>
+              </h1>
             </div>
           </div>
           <div class="col-lg-1 ml-auto">
@@ -144,7 +148,7 @@
                 </div>
               </div>
             </div>
-            <div class="container d-none d-lg-block">
+            <div class="container d-none d-lg-block" data-aos="fadeIn" data-aos-duration="3000">
               <a href="https://www.behance.net/danielignacio1" style="text-decoration: none;" class="">
                 <div class="media mb-xl-4 mb-3">
                   <i class="fab fa-behance icon-rrss"></i>
@@ -164,10 +168,33 @@
             </div>
           </div>
         </div>
-        <div class="row justify-content-center mb-xl-5 mt-lg-0 mt-xl-5 pt-xl-5 mt-5 pt-0">
-          <div class="col-xl-3">
-            <a href="" class="scroll-down-link scroll-down-arrow" data-iconfont="ETmodules" data-icon>
-            </a>
+      </div>
+    </section>
+
+    <section class="section-cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-12 mt-xl-5 mb-5" data-aos="fadeIn" data-aos-duration="2000">
+            <div class="card-transparent bg-contact fixed-border-top card-no-border bg-gradiente">
+              <div class="card-body">
+                <div class="container">
+                  <div class="row justify-content-between">
+                    <div class="col-xl-8">
+                      <h3 class="font-weight-bold text-light title-cta">
+                        Estas decido en empezar tu proyecto?<span class="ec ec-rocket ml-3"
+                          style="font-size: 2.3em;"></span></h3>
+                      <p class="lead font-weight-light text-light">Contactame, conversemos y analizemos la mejor
+                        solución digital para tu idea o emprendimiento.
+                      </p>
+                    </div>
+                    <div class="col-xl-3 mt-xl-5 d-none d-xl-block">
+                      <a class="btn btn-principal btn-rounded" data-scroll href="#section5">Conocer
+                        más</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -183,30 +210,32 @@
               </div>
               <div class="col-xl-4 col-md-4 mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="100">
                 <div class="media">
-                  <i class="fas fa-paint-brush mr-3 text-light" style="font-size: 2.0em;"></i>
+                  <i class="fas fa-paint-brush mr-3 text-secondary" style="font-size: 2.0em;"></i>
                   <div class="media-body">
-                    <h3 class="font-weight-light text-light">UI / UX</h3>
-                    <p class="text-light font-weight-light">Diseño de <b>interfacez</b> y <b>experiencias</b> acordes al
+                    <h3 class="font-weight-light text-secondary">UI / UX</h3>
+                    <p class="text-secondary font-weight-light">Diseño de <b>interfacez</b> y <b>experiencias</b>
+                      acordes al
                       contexto y utilidad del proyecto.</p>
                   </div>
                 </div>
               </div>
               <div class="col-xl-4 col-md-4 mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="150">
                 <div class="media">
-                  <i class="fas fa-laptop-code mr-3 text-light" style="font-size: 2.0em;"></i>
+                  <i class="fas fa-laptop-code mr-3 text-secondary" style="font-size: 2.0em;"></i>
                   <div class="media-body">
-                    <h3 class="font-weight-light text-light">Maquetación</h3>
-                    <p class="text-light font-weight-light">Protipado de los wireframes y assets en codigo utilizando
+                    <h3 class="font-weight-light text-secondary">Maquetación</h3>
+                    <p class="text-secondary font-weight-light">Protipado de los wireframes y assets en codigo
+                      utilizando
                       lenguajes de programacion web.</p>
                   </div>
                 </div>
               </div>
               <div class="col-xl-4 col-md-4 mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="200">
                 <div class="media">
-                  <i class="fas fa-brain mr-3 text-light" style="font-size: 2.0em;"></i>
+                  <i class="fas fa-brain mr-3 text-secondary" style="font-size: 2.0em;"></i>
                   <div class="media-body">
-                    <h3 class="font-weight-light text-light">Front-end</h3>
-                    <p class="text-light font-weight-light">Desarrollo de logica y comportamiento de componentes por
+                    <h3 class="font-weight-light text-secondary">Front-end</h3>
+                    <p class="text-secondary font-weight-light">Desarrollo de logica y comportamiento de componentes por
                       partes del flujo de la experiencia del usuario.</p>
                   </div>
                 </div>
@@ -215,31 +244,32 @@
             <div class="row pt-xl-2">
               <div class="col-xl-4 col-md-4 mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="210">
                 <div class="media">
-                  <i class="fas fa-server mr-3 text-light" style="font-size: 2.0em;"></i>
+                  <i class="fas fa-server mr-3 text-secondary" style="font-size: 2.0em;"></i>
                   <div class="media-body">
-                    <h3 class="font-weight-light text-light">Back-end</h3>
-                    <p class="text-light font-weight-light">Desarrollo de API's y modulos de logica utilizando lenguajes
+                    <h3 class="font-weight-light text-secondary">Back-end</h3>
+                    <p class="text-secondary font-weight-light">Desarrollo de API's y modulos de logica utilizando
+                      lenguajes
                       de programación.</p>
                   </div>
                 </div>
               </div>
               <div class="col-xl-4 col-md-4 mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="220">
                 <div class="media">
-                  <i class="fas fa-database mr-3 text-light" style="font-size: 2.0em;"></i>
+                  <i class="fas fa-database mr-3 text-secondary" style="font-size: 2.0em;"></i>
                   <div class="media-body">
-                    <h3 class="font-weight-light text-light">Base de Datos</h3>
-                    <p class="text-light font-weight-light">Desarollo de modelos relacionales y/no relacioles de
+                    <h3 class="font-weight-light text-secondary">Base de Datos</h3>
+                    <p class="text-secondary font-weight-light">Desarollo de modelos relacionales y/no relacioles de
                       arquitetucras de tablas o patrones de diseños.</p>
                   </div>
                 </div>
               </div>
               <div class="col-xl-4 col-md-4 mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="230">
                 <div class="media">
-                  <i class="fab fa-github mr-3 text-light" style="font-size: 2.0em;"></i>
+                  <i class="fas fa-bug mr-3 text-secondary" style="font-size: 2.0em;"></i>
                   <div class="media-body">
-                    <h3 class="font-weight-light text-light">Testing QA</h3>
-                    <p class="text-light font-weight-light">Supervision de codigo utilizando herramientas de testing en
-                      los repositorios de los proyectos.</p>
+                    <h3 class="font-weight-light text-secondary">Testing QA</h3>
+                    <p class="text-secondary font-weight-light">Supervision de funciones en codigo utilizando librerias
+                      de testing.</p>
                   </div>
                 </div>
               </div>
@@ -251,41 +281,45 @@
     <section id="section3" class="section-aboutus">
       <div class="container">
         <div class="row">
-          <div class="col-12 mt-5 pt-5 ">
+          <div class="col-12 pt-xl-5 mt-xl-5 mb-xl-0 pt-0 mt-0 mb-5">
             <h1 class="title-section text-light" data-aos="fade-right" data-aos-duration="900" data-aos-offset="60">
               Sobre mí</h1>
           </div>
         </div>
         <div class="row justify-content-between">
-          <div class="col-xl-7" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100" >
-            <div id="owl-carousel-about" class="owl-carousel owl-theme mt-xl-0" >
+          <div class="col-xl-7" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
+            <div id="owl-carousel-about" class="owl-carousel owl-theme mt-xl-0">
               <div class="item">
                 <div class="row mb-xl-0 mt-xl-0">
-                  <div class="col-12">
-                    <div class="box-text text-light">
-                      <p class="text-light font-weight-light">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse excepturi similique molestias
-                        rerum fugiat modi quisquam ipsam dolores ipsa? Odio cumque assumenda modi vero sunt iusto aut explicabo
-                        obcaecati ex?<br>
+                  <div class="col-11">
+                    <div class="box-text text-secondary">
+                      <p class="text-secondary font-weight-light">
+                        Me desempeño como <b>Desarrollador Web</b> y actualmente al <b>Diseño UI (Interface User)</b>, apasionado por las tecnologías, los videojuegos, películas y 
+                        series. Siempre al tanto sobre mundo de la tecnología digital, creativa y eficiente para seguir creciendo como profesional del área. 
+                      </p>
+                      <p class="text-secondary font-weight-light">
+                        Titulado como <i>Analista programador</i> e <i>Ingeniera en informática</i>, los últimos semestres de la carrera fui adquiriendo experiencia tomando a cabo proyectos de software para pequeñas empresas o pymes de mi ciudad. Después
+                        inicie mi práctica profesional como desarrollador web, aprendiendo nuevas herramientas y lenguajes de programación. Después de mi titulación he trabajado contastemente, pasando por agencias de publicidad digital y empresas de tecnología o consultoría y trabajando como Freelancer. 
+                      </p>
                     </div>
                   </div>
                 </div>
-                <div class="row mt-xl-3">
+                <!-- <div class="row mt-xl-3">
                   <div class="col-12 col-sm-6 mt-0 pt-3 col-md-6">
                     <div class="media">
-                      <i class="fa fa-user mr-3 text-light" style="font-size: 1.2em;"></i>
+                      <i class="fa fa-user mr-3 text-secondary" style="font-size: 1.2em;"></i>
                       <div class="media-body">
-                        <h5 class="font-weight-normal text-light">Nombre</h5>
-                        <p class="font-weight-light text-light">Daniel Duarte Erices</p>
+                        <h5 class="font-weight-normal text-secondary">Nombre</h5>
+                        <p class="font-weight-light text-secondary">Daniel Duarte Erices</p>
                       </div>
                     </div>
                   </div>
                   <div class="col-12 col-sm-6 mt-2 pt-3 col-md-6">
                     <div class="media">
-                      <i class="fas fa-envelope mr-3 text-light" style="font-size: 1.2em;"></i>
+                      <i class="fas fa-envelope mr-3 text-secondary" style="font-size: 1.2em;"></i>
                       <div class="media-body">
-                        <h5 class="font-weight-normal text-light">Email</h5>
-                        <p class="font-weight-light text-light">d.ignacio299@icloud.com</p>
+                        <h5 class="font-weight-normal text-secondary">Email</h5>
+                        <p class="font-weight-light text-secondary">d.ignacio299@icloud.com</p>
                       </div>
                     </div>
                   </div>
@@ -293,31 +327,31 @@
                 <div class="row mt-xl-3">
                   <div class="col-12 col-sm-6 mt-xl-0 pt-xl-0 mt-2 pt-3 col-md-6">
                     <div class="media">
-                      <i class="fa fa-phone mr-3 text-light" style="font-size: 1.2em;"></i>
+                      <i class="fa fa-phone mr-3 text-secondary" style="font-size: 1.2em;"></i>
                       <div class="media-body">
-                        <h5 class="font-weight-normal text-light">Telefono</h5>
-                        <p class="font-weight-light text-light">+569 8202 9354</p>
+                        <h5 class="font-weight-normal text-secondary">Telefono</h5>
+                        <p class="font-weight-light text-secondary">+569 8202 9354</p>
                       </div>
                     </div>
                   </div>
                   <div class="col-12 col-sm-6 mt-xl-0 pt-xl-0 mt-2 pt-3 col-md-6">
                     <div class="media">
-                      <i class="fab fa-linkedin mr-3 text-light" style="font-size: 1.2em;"></i>
+                      <i class="fab fa-linkedin mr-3 text-secondary" style="font-size: 1.2em;"></i>
                       <div class="media-body">
-                        <h5 class="font-weight-normal text-light">LinkedIn</h5>
-                        <p class="font-weight-light text-light">Daniel Duarte Erices</p>
+                        <h5 class="font-weight-normal text-secondary">LinkedIn</h5>
+                        <p class="font-weight-light text-secondary">Daniel Duarte Erices</p>
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
               <div class="item">
                 <div class="row pt-xl-5 mt-xl-0 mt-3">
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-html5 mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-html5 mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-light">HTML5 </p>
+                        <p class="font-weight-light text-secondary">HTML5 </p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%">95%</div>
@@ -327,9 +361,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-css3-alt mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-css3-alt mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-light">CSS3</p>
+                        <p class="font-weight-light text-secondary">CSS3</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
@@ -339,9 +373,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-js mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-js mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-light">JavaScript</p>
+                        <p class="font-weight-light text-secondary">JavaScript</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
@@ -351,9 +385,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-bootstrap mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-bootstrap mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-light">Bootstrap</p>
+                        <p class="font-weight-light text-secondary">Bootstrap</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
@@ -363,9 +397,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-sass mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-sass mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-light">Sass</p>
+                        <p class="font-weight-light text-secondary">Sass</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
@@ -375,9 +409,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-vuejs mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-vuejs mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-light">Vue JS</p>
+                        <p class="font-weight-light text-secondary">Vue JS</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
@@ -391,9 +425,9 @@
                 <div class="row pt-xl-5 mt-xl-0 mt-3">
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-wordpress mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-wordpress mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-light">Wordpress</p>
+                        <p class="font-weight-light text-secondary">Wordpress</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
@@ -403,9 +437,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-php mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-php mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-light">PHP</p>
+                        <p class="font-weight-light text-secondary">PHP</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
@@ -415,9 +449,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-laravel mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-laravel mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-light">Laravel</p>
+                        <p class="font-weight-light text-secondary">Laravel</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
@@ -427,9 +461,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-github mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-github mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-light">Github</p>
+                        <p class="font-weight-light text-secondary">Github</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
@@ -439,9 +473,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-git-alt mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-git-alt mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-light">Git</p>
+                        <p class="font-weight-light text-secondary">Git</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
@@ -451,9 +485,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-figma mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-figma mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-light">Figma</p>
+                        <p class="font-weight-light text-secondary">Figma</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
@@ -472,8 +506,8 @@
                   data-aos-duration="1000" data-aos-offset="200">
               </div>
               <div class="buttons-about mt-xl-0 mx-auto">
-                <a class="btn btn-principal btn-rounded" data-aos="fade-up" data-aos-duration="900"
-                data-aos-offset="90" href="#">Descargar CV</a>
+                <a class="btn btn-principal btn-rounded" data-aos="fade-up" data-aos-duration="900" data-aos-offset="90"
+                  href="#">Descargar CV</a>
                 <a class="btn btn-secondary btn-rounded ml-3" data-aos="fade-up" data-aos-duration="900"
                   data-aos-offset="100" data-scroll href="#section5">Contactar</a>
               </div>
@@ -486,7 +520,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6 mt-5 pt-5 ">
-            <h1 class="title-section text-light" data-aos="fade-right" data-aos-duration="900" data-aos-offset="60">
+            <h1 class="title-section text-secondary" data-aos="fade-right" data-aos-duration="900" data-aos-offset="60">
               Skills</h1>
           </div>
         </div>
@@ -497,9 +531,9 @@
                 <div class="row">
                   <div class="col-xl-4 mb-5">
                     <div class="media">
-                      <i class="fab fa-html5 mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-html5 mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <h5 class="font-weight-light text-light">HTML5 </h5>
+                        <h5 class="font-weight-light text-secondary">HTML5 </h5>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%">95%</div>
@@ -509,9 +543,9 @@
                   </div>
                   <div class="col-xl-4 mb-5">
                     <div class="media">
-                      <i class="fab fa-css3-alt mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-css3-alt mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <h5 class="font-weight-light text-light">CSS3</h5>
+                        <h5 class="font-weight-light text-secondary">CSS3</h5>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
@@ -521,9 +555,9 @@
                   </div>
                   <div class="col-xl-4 mb-5">
                     <div class="media">
-                      <i class="fab fa-js mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-js mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <h5 class="font-weight-light text-light">JavaScript</h5>
+                        <h5 class="font-weight-light text-secondary">JavaScript</h5>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
@@ -537,9 +571,9 @@
                 <div class="row pt-xl-2">
                   <div class="col-xl-4 mb-5">
                     <div class="media">
-                      <i class="fab fa-bootstrap mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-bootstrap mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <h5 class="font-weight-light text-light">Bootstrap</h5>
+                        <h5 class="font-weight-light text-secondary">Bootstrap</h5>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
@@ -549,9 +583,9 @@
                   </div>
                   <div class="col-xl-4 mb-5">
                     <div class="media">
-                      <i class="fab fa-sass mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-sass mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <h5 class="font-weight-light text-light">Sass</h5>
+                        <h5 class="font-weight-light text-secondary">Sass</h5>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
@@ -561,9 +595,9 @@
                   </div>
                   <div class="col-xl-4 mb-5">
                     <div class="media">
-                      <i class="fab fa-vuejs mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-vuejs mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <h5 class="font-weight-light text-light">Vue JS</h5>
+                        <h5 class="font-weight-light text-secondary">Vue JS</h5>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
@@ -577,9 +611,9 @@
                 <div class="row pt-xl-2">
                   <div class="col-xl-4 mb-5">
                     <div class="media">
-                      <i class="fab fa-wordpress mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-wordpress mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <h5 class="font-weight-light text-light">Wordpress</h5>
+                        <h5 class="font-weight-light text-secondary">Wordpress</h5>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
@@ -589,9 +623,9 @@
                   </div>
                   <div class="col-xl-4 mb-5">
                     <div class="media">
-                      <i class="fab fa-php mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-php mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <h5 class="font-weight-light text-light">PHP</h5>
+                        <h5 class="font-weight-light text-secondary">PHP</h5>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
@@ -601,9 +635,9 @@
                   </div>
                   <div class="col-xl-4 mb-5">
                     <div class="media">
-                      <i class="fab fa-laravel mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-laravel mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <h5 class="font-weight-light text-light">Laravel</h5>
+                        <h5 class="font-weight-light text-secondary">Laravel</h5>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
@@ -617,9 +651,9 @@
                 <div class="row pt-xl-2">
                   <div class="col-xl-4 mb-5">
                     <div class="media">
-                      <i class="fab fa-github mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-github mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <h5 class="font-weight-light text-light">Github</h5>
+                        <h5 class="font-weight-light text-secondary">Github</h5>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
@@ -629,9 +663,9 @@
                   </div>
                   <div class="col-xl-4 mb-5">
                     <div class="media">
-                      <i class="fab fa-git-alt mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-git-alt mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <h5 class="font-weight-light text-light">Git</h5>
+                        <h5 class="font-weight-light text-secondary">Git</h5>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
@@ -641,9 +675,9 @@
                   </div>
                   <div class="col-xl-4 mb-5">
                     <div class="media">
-                      <i class="fab fa-figma mr-3 text-light" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-figma mr-3 text-secondary" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <h5 class="font-weight-light text-light">Figma</h5>
+                        <h5 class="font-weight-light text-secondary">Figma</h5>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
@@ -659,8 +693,6 @@
       </div>
     </section> -->
     <style>
-
-
       #layer {
         position: absolute;
         top: 0;
@@ -672,13 +704,9 @@
     <section id="section4" class="section-works">
       <div class="container mb-5">
         <div class="row mb-xl-5">
-          <div class="col-lg-12">
-            <div class="box-text text-light">
-              <h1 class="title-section">Proyectos</h1>
-              <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officiis
-                corporis voluptas.
-              </p>
+          <div class="col-12 pt-xl-5 mt-xl-5 mb-xl-0 pt-0 mt-0 mb-5">
+            <div class="box-text text-secondary">
+              <h1 class="title-section text-light">Portafolio</h1>
             </div>
           </div>
         </div>
@@ -686,7 +714,7 @@
           <div class="col-lg-10">
             <div id="owl-carousel-uiux" class="owl-carousel owl-theme">
               <div class="row animate__animated animate__fadeIn">
-                <div class="col-lg-6 d-flex align-items-center justify-content-center pb-5 text-light">
+                <div class="col-lg-6 d-flex align-items-center justify-content-center pb-5 text-secondary">
                   <div class="box-text" data-aos="fade-right" data-aos-duration="1000">
                     <h1 class="display-4">Design UI / UX</h1>
                     <p class="lead">
@@ -694,9 +722,9 @@
                       corporis voluptas.
                     </p>
                     <hr class="my-4">
-                    <a href="" class="btn btn-info btn-rounded">
-                      <i class="fa fa-user ml-2 mr-2"></i> Conocer más
-                    </a>
+
+                    <a href="#" class="btn btn-principal btn-rounded" data-toggle="modal"
+                      data-target="#reservaModal">Enviar mensaje</a>
                   </div>
                 </div>
                 <div class="col-lg-6">
@@ -706,7 +734,7 @@
                 </div>
               </div>
               <div class="row animate__animated animate__fadeIn">
-                <div class="col-lg-6 d-flex align-items-center justify-content-center pb-5 text-light">
+                <div class="col-lg-6 d-flex align-items-center justify-content-center pb-5 text-secondary">
                   <div class="box-text" data-aos="fade-right" data-aos-duration="1000">
                     <h1 class="display-4">Design UI / UX</h1>
                     <p class="lead">
@@ -714,9 +742,9 @@
                       corporis voluptas.
                     </p>
                     <hr class="my-4">
-                    <a href="" class="btn btn-info btn-rounded">
-                      <i class="fa fa-user ml-2 mr-2"></i> Conocer más
-                    </a>
+
+                    <a href="#" class="btn btn-principal btn-rounded" data-toggle="modal"
+                      data-target="#reservaModal">Enviar mensaje</a>
                   </div>
                 </div>
                 <div class="col-lg-6">
@@ -728,6 +756,7 @@
             </div>
           </div>
         </div>
+        <hr class="my-4">
         <div class="row pt-xl-5 mt-xl-5 justify-content-center">
           <div class="col-lg-12">
             <div id="owl-carousel-maquetacion" class="owl-carousel owl-theme">
@@ -737,16 +766,16 @@
                     <img src="img/tu1.png" width="" alt="">
                   </div>
                 </div>
-                <div class="col-lg-6 d-flex align-items-center justify-content-center  pb-5 text-light">
+                <div class="col-lg-6 d-flex align-items-center justify-content-center  pb-5 text-secondary">
                   <div class="box-text text-center" data-aos="fade-left" data-aos-duration="1000">
                     <h1 class="display-4">Maquetación Web</h1>
                     <p class="lead">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officiis corporis voluptas.
                     </p>
                     <hr class="my-4">
-                    <a href="" class="btn btn-info btn-rounded">
-                      <i class="fa fa-user ml-2 mr-2"></i> Conocer más
-                    </a>
+
+                    <a href="#" class="btn btn-principal btn-rounded" data-toggle="modal"
+                      data-target="#reservaModal">Enviar mensaje</a>
                   </div>
                 </div>
               </div>
@@ -756,16 +785,16 @@
                     <img src="img/tu1.png" width="" alt="">
                   </div>
                 </div>
-                <div class="col-lg-6  pb-5 text-light">
+                <div class="col-lg-6  pb-5 text-secondary">
                   <div class="box-text text-center" data-aos="fade-left" data-aos-duration="1000">
                     <h1 class="display-4">Maquetación Web</h1>
                     <p class="lead">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officiis corporis voluptas.
                     </p>
                     <hr class="my-4">
-                    <a href="" class="btn btn-info btn-rounded">
-                      <i class="fa fa-user ml-2 mr-2"></i> Conocer más
-                    </a>
+
+                    <a href="#" class="btn btn-principal btn-rounded" data-toggle="modal"
+                      data-target="#reservaModal">Enviar mensaje</a>
                   </div>
                 </div>
               </div>
@@ -777,7 +806,7 @@
     <section class="section-cta">
       <div class="container">
         <div class="row">
-          <div class="col-xl-12" data-aos="fadeIn" data-aos-duration="2000">
+          <div class="col-xl-12 mb-5 mb-lg-5" data-aos="fadeIn" data-aos-duration="2000">
             <div class="card-transparent bg-contact fixed-border-top card-no-border bg-gradiente">
               <div class="card-body">
                 <div class="container">
@@ -789,8 +818,8 @@
                         wittier subheading to boot. Jumpstart
                         your marketing efforts with this example based on Apple’s marketing pages.
                       </p>
-                      <button class="btn btn-principal btn-rounded" data-toggle="modal" data-target="#reservaModal">Escribir
-                        mensaje<i class="far fa-paper-plane ml-2" style="font-size: 1.3em;"></i></button>
+                      <a class="btn btn-principal btn-rounded" data-scroll href="#section5">Escribir
+                        mensaje</a>
                     </div>
                     <div class="col-xl-4 d-none d-xl-block">
                       <img src="/img/cta.svg" class="img-fluid" alt="">
@@ -804,44 +833,45 @@
       </div>
     </section>
     <section id="section5" class="contact-form">
-      <div class="container mb-5">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="box-text text-light">
-              <h1 class="title-section">Contacto</h1>
-              <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati officiis corporis voluptas.
-              </p>
+      <div class="container">
+        <div class="row mt-5 mt-xl-5">
+          <div class="col-12 pt-xl-5 mt-xl-5 mb-xl-0 pt-0 mt-0 mb-5">
+            <div class="box-text text-secondary">
+              <h1 class="title-section text-light">Contacto</h1>
             </div>
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="row justify-content-between mt-xl-2 pt-xl-2" data-aos="fade-up" data-aos-duration="1000">
-          <div class="col-lg-6 mb-xl-1 mb-5 py-2">
+        <div class="row justify-content-between mt-xl-2 pt-xl-2 mb-xl-5" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col-xl-6 col-lg-6 mb-xl-0 mb-5 py-2">
             <div class="card-transparent bg-contact bg-gradiente">
               <div class="card-body">
                 <div class="container">
                   <div class="row justify-content-end">
                     <div class="col-10">
-                      <h4 class="text-light  font-weight-light mt-xl-4 mt-4">Envia un mensaje</h4>
+                      <h4 class="text-light font-weight-secondary mt-xl-4 mt-4">Envia un mensaje</h4>
                     </div>
                     <div class="col-2 mr-xl-auto">
-                      <i class="fas fa-comment-dots mr-auto" style="font-size: 3.0em; color:#fff;"></i>
+                      <a href="https://wa.me/56982029354?text=Necesito%20asesoramiento%20para%20un%20proyecto%20web%20" target="_blank" style="text-decoration: none;" class="">
+                        <div class="media btn-rrss">
+                          <i class="fab fa-whatsapp icon-rrss" style="font-size: 3.0em; color:#fff;"></i>
+                        </div>
+                      </a>
                     </div>
                   </div>
                   <div class="row justify-content-between mt-5 mb-1">
                     <div class="col-12">
-                      <form class="text-light">
+                      <form class="text-secondary">
                         <div class="form-group">
                           <label for="exampleFormControlInput1">Nombre y apellidos</label>
                           <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com">
+                            placeholder="" required="">
                         </div>
                         <div class="form-group">
                           <label for="exampleFormControlInput1">Correo Electrónico</label>
                           <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com">
+                            placeholder="" required="">
                         </div>
                         <div class="form-group">
                           <label for="exampleFormControlSelect1">Asunto</label>
@@ -858,9 +888,8 @@
                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <div class="form-group mt-xl-5 d-flex justify-content-center">
-                          <button class="btn btn-principal btn-rounded" data-toggle="modal"
-                            data-target="#reservaModal">Enviar mensaje<i class="far fa-paper-plane ml-2"
-                              style="font-size: 1.3em;"></i></button>
+                          <a href="#" id="submit" type="submit" class="btn btn-principal btn-rounded" data-toggle="modal"
+                            data-target="#reservaModal">Enviar mensaje</a>
                         </div>
                       </form>
                     </div>
@@ -869,44 +898,50 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-xl-4 col-lg-5 mt-lg-5">
             <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-10">
-                  <h4 class="text-light  font-weight-light mt-xl-4">Visitame en:</h4>
-                </div>
-                <div class="col-2 mr-auto">
-
-                </div>
-              </div>
-              <a href="" style="text-decoration: none;" class="">
-                <div class="media mb-xl-4 mt-xl-5 pt-xl-4 mb-3 mt-5 btn-rrss">
-                  <i class="fab fa-github" style="font-size: 3.0em; color:#fff;"></i>
+              <a href="https://github.com/edidk7" target="_blank" style="text-decoration: none;" class="">
+                <div class="media mb-xl-4 mt-xl-5 pt-xl-4 mb-3 mt-2 btn-rrss">
+                  <i class="fab fa-github icon-rrss" style="font-size: 3.0em; color:#fff;"></i>
                   <div class="media-body mt-xl-1 ml-4">
-                    <h4 class="text-light">GitHub</h4>
-                    <p class="text-light lead">Danielignacio1</p>
+                    <h4 class="text-secondary">GitHub</h4>
+                    <p class="text-secondary lead">Edidk7</p>
                   </div>
                 </div>
               </a>
-              <div class="media mb-xl-4">
-                <i class="fab fa-behance icon-rrss"></i>
-                <div class="media-body mt-xl-1 ml-4">
-                  <h4 class="text-light">Behance</h4>
-                  <p class="text-light lead">Danielignacio1</p>
+              <a href="https://www.behance.net/danielignacio1" target="_blank" style="text-decoration: none;" class="">
+                <div class="media mb-xl-4">
+                  <i class="fab fa-behance icon-rrss"></i>
+                  <div class="media-body mt-xl-1 ml-4">
+                    <h4 class="text-secondary">Behance</h4>
+                    <p class="text-secondary lead">Danielignacio1</p>
+                  </div>
                 </div>
-              </div>
-              <div class="media mb-xl-4">
-                <i class="fab fa-linkedin" style="font-size: 3.0em; color:#fff;"></i>
-                <div class="media-body mt-xl-1 mb-3 ml-4">
-                  <h4 class="text-light">LinkeIn</h4>
-                  <p class="text-light lead">Danielignacio1</p>
+              </a>
+              <a href="https://www.linkedin.com/in/daniel-duarte-erices-005231101/" target="_blank"
+                style="text-decoration: none;" class="">
+                <div class="media mb-xl-4">
+                  <i class="fab fa-linkedin icon-rrss" style="font-size: 3.0em; color:#fff;"></i>
+                  <div class="media-body mt-xl-1 mb-3 ml-4">
+                    <h4 class="text-secondary">LinkeIn</h4>
+                    <p class="text-secondary lead">Daniel Duarte Erices</p>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <footer class="fdb-block footer-small bg-footer">
+      <div class="container">
+        <div class="row text-center align-items-center">
+          <div class="col">
+            <p class="text-light lead my-4">Daniel Duarte © - 2020</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </main>
 
   <div id="particles-js"></div>

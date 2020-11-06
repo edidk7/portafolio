@@ -97,7 +97,7 @@
   left: 50%;
   bottom: 10px;
   top: 0.6em;
-  color: #FFF;
+  color: #333333;
   text-align: center;
   font-size: 70px;
   text-decoration: none;
@@ -137,22 +137,37 @@
   }
 }
 
+.icon-wsp {
+  font-size: 2.5em;
+  color: #666666 !important;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
 .icon-rrss {
   font-size: 2.5em;
-  color: #fff !important;
+  color: #666666 !important;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .icon-rrss2 {
   font-size: 2.9em;
-  color: #fff !important;
+  color: #666666 !important;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
+.icon-wsp:hover {
+  color: #fff !important;
+  opacity: 1;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-shadow: 0 0 0.2em #87F, 0 0 0.5em #0575E6, 0 0 0.5em #0576e69e;
+}
+
 .icon-rrss:hover {
-  font-size: 3.5em !important;
+  color: #fff !important;
   opacity: 1;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -160,7 +175,7 @@
 }
 
 .icon-rrss2:hover {
-  font-size: 3.8em !important;
+  color: #fff !important;
   opacity: 1;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;

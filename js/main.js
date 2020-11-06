@@ -27,7 +27,7 @@ $(document).ready(function() {
     })
 
     $('#owl-carousel-about').owlCarousel({
-      autoplay: true,
+      autoplay: false,
       autoplayHoverPaused: false,
       items: 1,
       margin:2,
@@ -115,7 +115,8 @@ function navBarDesktop(){
         $('.fixed-top').css('transition', 'all 0.1s ease-in-out 0s');
         $('.fixed-top').css('border-bottom', '0px solid #fff');
     } else {
-        $('.fixed-top').css('background', '#182848');
+        $('.fixed-top').css('background', '#191919');
+        $('.fixed-top').css('color', '#fff');
         $('.fixed-top').css('border-bottom', '1px solid #8393B4');
         $('.fixed-top').css('transition', 'all 0.4s ease-in-out 0s');
 
