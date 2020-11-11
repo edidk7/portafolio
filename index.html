@@ -19,15 +19,16 @@
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Owl Carrousel -->
-  <link rel="stylesheet" href="library/owl.carousel.css" type="text/css">
-  <link rel="stylesheet" href="library/owl.theme.default.min.css" type="text/css">
+  <link rel="stylesheet" href="assets/library/owl.carousel.css" type="text/css">
+  <link rel="stylesheet" href="assets/library/owl.theme.default.min.css" type="text/css">
   <!-- FullPage JS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css">
   <!-- Emojis -->
   <link rel='stylesheet' href='https://unpkg.com/emoji.css/dist/emoji.min.css'>
   <!-- Style CSS -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/hamburgers.css">
+  <link rel="stylesheet" href="assets/css/main.css">
   <!-- COLOR -->
   <meta name="theme-color" content="#ec0f4e">
   <meta name="msapplication-navbutton-color" content="#ec0f4e">
@@ -68,15 +69,32 @@
     <nav id="navbar-example2" class="navbar navbar-expand-md navbar-light fixed-top">
       <div class="container">
         <div class="logo">
-          <a href="#"><img src="img/logo.png" id="logo-web" class="img-fluid animate__animated animate__fadeIn"
+          <a href="#"><img src="assets/img/logo.png" id="logo-web" class="img-fluid animate__animated animate__fadeIn"
               alt=""></a>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        <div class="d-block d-lg-none">
+          <a href="#menu" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span>
             <i class="fas fa-bars"></i>
           </span>
-        </button>
+        </a>
+        </div>
+        <!-- Menu -->
+        <div id="menu" class="">
+          <ul class="pt-3 mt-5 mb-5 text-right">
+            <li class="nav-item"><a class="nav-link active" data-scroll href="#section1" class="">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" data-scroll href="#section2" class="">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" data-scroll href="#section3" class="">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" data-scroll href="#section4" class="">Portafolio</a></li>
+            <li class="nav-item"><a class="nav-link" data-scroll href="#section5" class="">Contacto</a></li>
+            <li class="nav-item mt-3"><a class="btn btn-principal btn-rounded"
+                href="https://wa.me/56982029354?text=Necesito%20asesoramiento%20para%20un%20proyecto%20web%20"
+                target="_blank" value="Reserva pedido">Escribeme <i class="fab fa-whatsapp ml-2"
+                  style="font-size: 1.3em;"></i></a>
+            </li>
+          </ul>
+        </div>
         <div class="collapse navbar-collapse container animate__animated animate__fadeIn mt-5 mt-xl-0" id="navbarNav">
           <ul class="navbar-nav ml-lg-auto">
             <li class="nav-item ml-0">
@@ -110,7 +128,6 @@
     </nav>
   </header>
   <main>
-    <a id="buttonScroll"> </a>
     <section id="section1" class="section-hero">
       <div class="container-section-hero d-none d-lg-block">
         <div class="container-section-hero-inner">
@@ -160,7 +177,7 @@
           <div class="col-lg-10 text-left pb-5">
             <div class="box-text">
               <p class="lead animate__animated animate__fadeIn mt-xl-3">
-                <h4 class="display-5">Bienvenido<span class="ec ec-wave ml-3" style="font-size: 1.3em;"></span></h4>
+              <h4 class="display-5">Bienvenido<span class="ec ec-wave ml-3" style="font-size: 1.3em;"></span></h4>
               </p>
               <h4 class="typewrite title-section animate__animated animate__fadeIn" data-period="2000"
                 data-type='[ "Hola, que tal ?", "Soy Daniel Duarte !", "Diseñador UI / UX ", "Desarrollador Front-end.", "I Love to Develop <3" ,"Young creative by the web!"]'>
@@ -178,17 +195,17 @@
                   </a>
                 </div>
                 <div class="col-4">
-                  <a href="https://www.linkedin.com/in/daniel-duarte-erices-005231101/"
-                    style="text-decoration: none;" class="">
-                    <div class="media mb-xl-4">
-                      <i class="fab fa-linkedin icon-rrss2"></i>
+                  <a href="https://github.com/edidk7" style="text-decoration: none;" class="">
+                    <div class="media mb-xl-4 mt-xl-0 pt-xl-2 mb-3 mt-0">
+                      <i class="fab fa-github icon-rrss2"></i>
                     </div>
                   </a>
                 </div>
                 <div class="col-4">
-                  <a href="https://github.com/edidk7" style="text-decoration: none;" class="">
-                    <div class="media mb-xl-4 mt-xl-0 pt-xl-2 mb-3 mt-0">
-                      <i class="fab fa-github icon-rrss2"></i>
+                  <a href="https://www.linkedin.com/in/daniel-duarte-erices-005231101/"
+                    style="text-decoration: none;" class="">
+                    <div class="media mb-xl-4">
+                      <i class="fab fa-linkedin icon-rrss2"></i>
                     </div>
                   </a>
                 </div>
@@ -225,7 +242,8 @@
                 <h1 class="title-section" data-aos="fade-right" data-aos-duration="900" data-aos-offset="60">
                   Servicios</h1>
               </div>
-              <div class="col-xl-4 col-md-4 mb-5 mt-xl-5 pt-xl-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="100">
+              <div class="col-xl-4 col-md-4 mb-5 mt-xl-5 pt-xl-5" data-aos="fade-up" data-aos-duration="900"
+                data-aos-offset="100">
                 <div class="media">
                   <i class="fas fa-paint-brush mr-3 " style="font-size: 2.0em;"></i>
                   <div class="media-body">
@@ -236,7 +254,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 col-md-4 mb-5 mt-xl-5 pt-xl-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="150">
+              <div class="col-xl-4 col-md-4 mb-5 mt-xl-5 pt-xl-5" data-aos="fade-up" data-aos-duration="900"
+                data-aos-offset="150">
                 <div class="media">
                   <i class="fas fa-laptop-code mr-3 " style="font-size: 2.0em;"></i>
                   <div class="media-body">
@@ -247,7 +266,8 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-4 col-md-4 mb-5 mt-xl-5 pt-xl-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="200">
+              <div class="col-xl-4 col-md-4 mb-5 mt-xl-5 pt-xl-5" data-aos="fade-up" data-aos-duration="900"
+                data-aos-offset="200">
                 <div class="media">
                   <i class="fas fa-brain mr-3 " style="font-size: 2.0em;"></i>
                   <div class="media-body">
@@ -329,7 +349,7 @@
                       <div class="row justify-content-center mt-xl-2">
                         <div class="col mt-5">
                           <div class="col-12 d-block d-md-none">
-                            <img src="img/about_rocket.png" class="img-fluid w-90" alt="" data-aos="fade-right"
+                            <img src="assets/img/about_rocket.png" class="img-fluid w-90" alt="" data-aos="fade-right"
                               data-aos-duration="1000" data-aos-offset="200">
                           </div>
                         </div>
@@ -543,13 +563,9 @@
           </div>
           <div class="col-xl-4">
             <div class="row mt-xl-4 pt-xl-3 mb-5 mt-xl-0 mt-xl-0 pt-xl-0 mt-3 pt-3">
-              <div id="object1" class="col-12 d-none d-xl-block">
-                <img src="img/about_rocket.png" class="img-fluid w-90" alt="" data-aos="fade-right"
-                  data-aos-duration="1000" data-aos-offset="200">
-              </div>
               <div class="buttons-about mt-xl-0 mx-auto">
-                <a href="/img/CV_DD.pdf" target="_blank" class="btn btn-principal btn-rounded" data-aos="fade-up" data-aos-duration="900" data-aos-offset="90"
-                  href="#">Descargar CV</a>
+                <a href="/img/CV_DD.pdf" target="_blank" class="btn btn-principal btn-rounded" data-aos="fade-up"
+                  data-aos-duration="900" data-aos-offset="90" href="#">Descargar CV</a>
                 <a class="btn btn-secondary btn-rounded ml-3" data-aos="fade-up" data-aos-duration="900"
                   data-aos-offset="90" data-scroll href="#section5">Contactar</a>
               </div>
@@ -863,7 +879,12 @@
                         más</a>
                     </div>
                     <div class="col-xl-3 mt-xl-3 d-none d-xl-block">
-                      <span class="ec ec-rocket ml-3" style="font-size: 6.3em;"></span>
+                      <div id="object1" class="col-12 d-none d-xl-block" data-aos="fade-right" data-aos-duration="1000"
+                        data-aos-offset="200">
+                        <div class="">
+                          <span class="ec ec-rocket" style="font-size: 6.3em;"></span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -997,16 +1018,17 @@
   <!-- Particles js-->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-  <script src="js/particle.js"></script>
+  <script src="assets/js/particle.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <!--FullPage JS-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
   <!-- OWl carousel-->
-  <script src="library/jquery.min.js"></script>
-  <script src="library/owl.carousel.js"></script>
-  <script src="js/main.js"></script>
+  <script src="assets/library/jquery.min.js"></script>
+  <script src="assets/library/owl.carousel.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/menu.js"></script>
   <!-- Smooth-Scroll -->
-  <script src="js/smooth-scroll.min.js"></script>
+  <script src="assets/js/smooth-scroll.min.js"></script>
   <script>
     smoothScroll.init({
       selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
