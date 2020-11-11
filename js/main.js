@@ -13,6 +13,7 @@ $(document).ready(function() {
 
     navBarDesktop();
     effectToWritte();
+    buttonScroll();
     moveElementMouse();
 
     new fullpage('#fullPage', {
@@ -187,4 +188,24 @@ function effectToWritte(){
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
   };
+}
+
+function buttonScroll(){
+
+var btn = $('#buttonScroll');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
 }

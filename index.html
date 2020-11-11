@@ -64,7 +64,7 @@
 <body id="layer" data-spy="scroll" data-target="#navbar-example2">
   <!--Menu-->
   <header>
-    <nav id="navbar-example2" class="navbar navbar-expand-md navbar-light fixed-top d-none d-lg-block">
+    <nav id="navbar-example2" class="navbar navbar-expand-md navbar-light fixed-top">
       <div class="container">
         <div class="logo">
           <a href="#"><img src="img/logo.png" id="logo-web" class="img-fluid animate__animated animate__fadeIn"
@@ -76,26 +76,27 @@
             <i class="fas fa-bars"></i>
           </span>
         </button>
-        <div class="collapse navbar-collapse container animate__animated animate__fadeIn" id="navbarNav">
+        <div class="collapse navbar-collapse container animate__animated animate__fadeIn mt-5 mt-xl-0" id="navbarNav">
           <ul class="navbar-nav ml-lg-auto">
-            <li class="nav-item ml-1">
+            <li class="nav-item ml-0">
               <a class="nav-link active" data-scroll href="#section1">Home</a>
             </li>
-            <li class="nav-item ml-1">
+            <li class="nav-item ml-0">
               <a class="nav-link" data-scroll href="#section2">Servicios</a>
             </li>
-            <li class="nav-item ml-1">
+            <li class="nav-item ml-0">
               <a class="nav-link" data-scroll href="#section3">Sobre mí</a>
             </li>
-            <li class="nav-item ml-1">
+            <li class="nav-item ml-0">
               <a class="nav-link" data-scroll href="#section4">Portafolio</a>
             </li>
-            <li class="nav-item ml-1">
+            <li class="nav-item ml-0">
               <a class="nav-link" data-scroll href="#section5">Contacto</a>
             </li>
             <li class="nav-item ml-2">
-              <div class="ml-3">  
-                <a href="https://wa.me/56982029354?text=Necesito%20asesoramiento%20para%20un%20proyecto%20web%20" target="_blank" style="text-decoration: none;" class="">
+              <div class="ml-3">
+                <a href="https://wa.me/56982029354?text=Necesito%20asesoramiento%20para%20un%20proyecto%20web%20"
+                  target="_blank" style="text-decoration: none;" class="">
                   <div class="media btn-rrss">
                     <i class="fab fa-whatsapp icon-wsp" style="font-size: 2.0em; color:#fff;"></i>
                   </div>
@@ -108,17 +109,61 @@
     </nav>
   </header>
   <main>
+    <a id="buttonScroll"> </a>
     <section id="section1" class="section-hero">
-      <div class="container">
+      <div class="container-section-hero d-none d-lg-block">
+        <div class="container-section-hero-inner">
+          <div class="image-wrapper2">
+            <div class="image-container-section-hero2">
+              <img class="image"
+                src="https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="image of a young woman.">
+            </div>
+          </div>
+          <div class="main-content">
+            <div class="main-headings" id="main-headings-js">
+              <div class="heading">
+                <!-- <h3 id="heading1">Bienvenido a mí</h3>
+                <h3 id="heading2">portafolio</h3> -->
+                <h5 class="title-section typewrite animate__animated animate__fadeIn" data-period="2000"
+                  data-type='[ "Diseño UI", "Diseño UX" , "Desarrollo Web"]'>
+                </h5>
+              </div>
+              <!-- <div class="short-bio">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, repellat, quod sed optio nesciunt
+                  aspernatur inventore ab, nostrum accusantium harum dolor voluptate nulla!</p>
+              </div> -->
+            </div>
+            <div class="more-info mt-xl-5" id="more-info-js">
+              <h4 class="display-5">Bienvenido<span class="ec ec-wave ml-3" style="font-size: 1.3em;"></span></h4>
+            </div>
+            <div class="image-wrapper3">
+              <div class="image-container-section-hero3">
+                <img class="image"
+                  src="https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  alt="image of a young woman.">
+              </div>
+            </div>
+          </div>
+          <div class="image-wrapper">
+            <div class="image-container-section-hero">
+              <img class="image"
+                src="https://images.pexels.com/photos/102061/pexels-photo-102061.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260""
+                alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" container d-block d-lg-none">
         <div class="row justify-content-start mb-xl-0 mt-xl-5 pt-xl-5 mt-lg-5">
           <div class="col-lg-10 text-left pb-5">
             <div class="box-text">
               <p class="lead animate__animated animate__fadeIn mt-xl-3">
-                Experimentado en tecnologías.
+                <h4 class="display-5">Bienvenido<span class="ec ec-wave ml-3" style="font-size: 1.3em;"></span></h4>
               </p>
-              <h1 class="text-light typewrite title-section animate__animated animate__fadeIn" data-period="2000"
+              <h4 class="typewrite title-section animate__animated animate__fadeIn" data-period="2000"
                 data-type='[ "Hola, que tal ?", "Soy Daniel Duarte !", "Diseñador UI / UX ", "Desarrollador Front-end.", "I Love to Develop <3" ,"Young creative by the web!"]'>
-              </h1>
+              </h4>
             </div>
           </div>
           <div class="col-lg-1 ml-auto">
@@ -132,17 +177,17 @@
                   </a>
                 </div>
                 <div class="col-4">
-                  <a href="https://github.com/edidk7" style="text-decoration: none;" class="">
-                    <div class="media mb-xl-4 mt-xl-0 pt-xl-2 mb-3 mt-0">
-                      <i class="fab fa-github icon-rrss2"></i>
+                  <a href="https://www.linkedin.com/in/daniel-duarte-erices-005231101/"
+                    style="text-decoration: none;" class="">
+                    <div class="media mb-xl-4">
+                      <i class="fab fa-linkedin icon-rrss2"></i>
                     </div>
                   </a>
                 </div>
                 <div class="col-4">
-                  <a href="https://www.linkedin.com/in/daniel-duarte-erices-005231101/" style="text-decoration: none;"
-                    class="">
-                    <div class="media mb-xl-4">
-                      <i class="fab fa-linkedin icon-rrss2"></i>
+                  <a href="https://github.com/edidk7" style="text-decoration: none;" class="">
+                    <div class="media mb-xl-4 mt-xl-0 pt-xl-2 mb-3 mt-0">
+                      <i class="fab fa-github icon-rrss2"></i>
                     </div>
                   </a>
                 </div>
@@ -170,50 +215,21 @@
         </div>
       </div>
     </section>
-
-    <section class="section-cta">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12 mt-xl-5 mb-5" data-aos="fadeIn" data-aos-duration="2000">
-            <div class="card-transparent bg-contact fixed-border-top card-no-border bg-gradiente">
-              <div class="card-body">
-                <div class="container">
-                  <div class="row justify-content-between">
-                    <div class="col-xl-8">
-                      <h3 class="font-weight-bold text-light title-cta">
-                        Estas decido en empezar tu proyecto?<span class="ec ec-rocket ml-3"
-                          style="font-size: 2.3em;"></span></h3>
-                      <p class="lead font-weight-light text-light">Contactame, conversemos y analizemos la mejor
-                        solución digital para tu idea o emprendimiento.
-                      </p>
-                    </div>
-                    <div class="col-xl-3 mt-xl-5 d-none d-xl-block">
-                      <a class="btn btn-principal btn-rounded" data-scroll href="#section5">Conocer
-                        más</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <section id="section2" class="section-services">
       <div class="container">
         <div class="row">
           <div class="col-xl-12 mt-2 mb-xl-5">
             <div class="row">
               <div class="col-12 pt-xl-5 mt-xl-5 mb-xl-0 pt-0 mt-0 mb-5">
-                <h1 class="title-section text-light mb-xl-5" data-aos="fade-right" data-aos-duration="900"
-                  data-aos-offset="60">Servicios</h1>
+                <h1 class="title-section mb-xl-5" data-aos="fade-right" data-aos-duration="900" data-aos-offset="60">
+                  Servicios</h1>
               </div>
               <div class="col-xl-4 col-md-4 mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="100">
                 <div class="media">
-                  <i class="fas fa-paint-brush mr-3 text-secondary" style="font-size: 2.0em;"></i>
+                  <i class="fas fa-paint-brush mr-3 " style="font-size: 2.0em;"></i>
                   <div class="media-body">
-                    <h3 class="font-weight-light text-secondary">UI / UX</h3>
-                    <p class="text-secondary font-weight-light">Diseño de <b>interfacez</b> y <b>experiencias</b>
+                    <h3 class="display-5">UI / UX</h3>
+                    <p class=" font-weight-normal">Diseño de <b>interfacez</b> y <b>experiencias</b>
                       acordes al
                       contexto y utilidad del proyecto.</p>
                   </div>
@@ -221,10 +237,10 @@
               </div>
               <div class="col-xl-4 col-md-4 mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="150">
                 <div class="media">
-                  <i class="fas fa-laptop-code mr-3 text-secondary" style="font-size: 2.0em;"></i>
+                  <i class="fas fa-laptop-code mr-3 " style="font-size: 2.0em;"></i>
                   <div class="media-body">
-                    <h3 class="font-weight-light text-secondary">Maquetación</h3>
-                    <p class="text-secondary font-weight-light">Protipado de los wireframes y assets en codigo
+                    <h3 class="display-5">Maquetación</h3>
+                    <p class=" font-weight-normal">Protipado de los wireframes y assets en codigo
                       utilizando
                       lenguajes de programacion web.</p>
                   </div>
@@ -232,10 +248,10 @@
               </div>
               <div class="col-xl-4 col-md-4 mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="200">
                 <div class="media">
-                  <i class="fas fa-brain mr-3 text-secondary" style="font-size: 2.0em;"></i>
+                  <i class="fas fa-brain mr-3 " style="font-size: 2.0em;"></i>
                   <div class="media-body">
-                    <h3 class="font-weight-light text-secondary">Front-end</h3>
-                    <p class="text-secondary font-weight-light">Desarrollo de logica y comportamiento de componentes por
+                    <h3 class="display-5">Front-end</h3>
+                    <p class=" font-weight-normal">Desarrollo de logica y comportamiento de componentes por
                       partes del flujo de la experiencia del usuario.</p>
                   </div>
                 </div>
@@ -244,10 +260,10 @@
             <div class="row pt-xl-2">
               <div class="col-xl-4 col-md-4 mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="210">
                 <div class="media">
-                  <i class="fas fa-server mr-3 text-secondary" style="font-size: 2.0em;"></i>
+                  <i class="fas fa-server mr-3 " style="font-size: 2.0em;"></i>
                   <div class="media-body">
-                    <h3 class="font-weight-light text-secondary">Back-end</h3>
-                    <p class="text-secondary font-weight-light">Desarrollo de API's y modulos de logica utilizando
+                    <h3 class="display-5">Back-end</h3>
+                    <p class=" font-weight-normal">Desarrollo de API's y modulos de logica utilizando
                       lenguajes
                       de programación.</p>
                   </div>
@@ -255,20 +271,20 @@
               </div>
               <div class="col-xl-4 col-md-4 mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="220">
                 <div class="media">
-                  <i class="fas fa-database mr-3 text-secondary" style="font-size: 2.0em;"></i>
+                  <i class="fas fa-database mr-3 " style="font-size: 2.0em;"></i>
                   <div class="media-body">
-                    <h3 class="font-weight-light text-secondary">Base de Datos</h3>
-                    <p class="text-secondary font-weight-light">Desarollo de modelos relacionales y/no relacioles de
+                    <h3 class="display-5">Base de Datos</h3>
+                    <p class=" font-weight-normal">Desarollo de modelos relacionales y/no relacioles de
                       arquitetucras de tablas o patrones de diseños.</p>
                   </div>
                 </div>
               </div>
               <div class="col-xl-4 col-md-4 mb-5" data-aos="fade-up" data-aos-duration="900" data-aos-offset="230">
                 <div class="media">
-                  <i class="fas fa-bug mr-3 text-secondary" style="font-size: 2.0em;"></i>
+                  <i class="fas fa-bug mr-3 " style="font-size: 2.0em;"></i>
                   <div class="media-body">
-                    <h3 class="font-weight-light text-secondary">Testing QA</h3>
-                    <p class="text-secondary font-weight-light">Supervision de funciones en codigo utilizando librerias
+                    <h3 class="display-5">Testing QA</h3>
+                    <p class=" font-weight-normal">Supervision de funciones en codigo utilizando librerias
                       de testing.</p>
                   </div>
                 </div>
@@ -282,7 +298,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12 pt-xl-5 mt-xl-5 mb-xl-0 pt-0 mt-0 mb-5">
-            <h1 class="title-section text-light" data-aos="fade-right" data-aos-duration="900" data-aos-offset="60">
+            <h1 class="title-section" data-aos="fade-right" data-aos-duration="900" data-aos-offset="60">
               Sobre mí</h1>
           </div>
         </div>
@@ -292,14 +308,41 @@
               <div class="item">
                 <div class="row mb-xl-0 mt-xl-0">
                   <div class="col-11">
-                    <div class="box-text text-secondary">
-                      <p class="text-secondary font-weight-light">
-                        Me desempeño como <b>Desarrollador Web</b> y actualmente al <b>Diseño UI (Interface User)</b>, apasionado por las tecnologías, los videojuegos, películas y 
-                        series. Siempre al tanto sobre mundo de la tecnología digital, creativa y eficiente para seguir creciendo como profesional del área. 
+                    <div class="box-text">
+                      <p class="font-weight-normal">
+                        Me desempeño como <b>Desarrollador Web</b> y actualmente al <b>Diseño UI (Interface User)</b>,
+                        apasionado por las tecnologías, los videojuegos, películas y
+                        series.
+                      <p>Siempre al tanto sobre mundo de la tecnología digital, creativa y eficiente para seguir
+                        creciendo como profesional del área.</p>
                       </p>
-                      <p class="text-secondary font-weight-light">
-                        Titulado como <i>Analista programador</i> e <i>Ingeniera en informática</i>, los últimos semestres de la carrera fui adquiriendo experiencia tomando a cabo proyectos de software para pequeñas empresas o pymes de mi ciudad. Después
-                        inicie mi práctica profesional como desarrollador web, aprendiendo nuevas herramientas y lenguajes de programación. Después de mi titulación he trabajado contastemente, pasando por agencias de publicidad digital y empresas de tecnología o consultoría y trabajando como Freelancer. 
+                      <div class="row justify-content-center mt-xl-2">
+                        <div class="col-2">
+                          <span class="ec ec-computer" style="font-size: 3.0em;"></span>
+                        </div>
+                        <div class="col-2">
+                          <span class="ec ec-video-game" style="font-size: 3.0em;"></span>
+                        </div>
+                        <div class="col-2">
+                          <span class="ec ec-bike" style="font-size: 3.0em;"></span>
+                        </div>
+                      </div>
+                      <div class="row justify-content-center mt-xl-2">
+                        <div class="col mt-5">
+                          <div class="col-12 d-block d-md-none">
+                            <img src="img/about_rocket.png" class="img-fluid w-90" alt="" data-aos="fade-right"
+                              data-aos-duration="1000" data-aos-offset="200">
+                          </div>
+                        </div>
+                      </div>
+                      <p class="font-weight-light d-none">
+                        Titulado como <i>Analista programador</i> e <i>Ingeniera en informática</i>, los últimos
+                        semestres de la carrera fui adquiriendo experiencia tomando a cabo proyectos de software para
+                        pequeñas empresas o pymes de mi ciudad. Después
+                        inicie mi práctica profesional como desarrollador web, aprendiendo nuevas herramientas y
+                        lenguajes de programación. Después de mi titulación he trabajado contastemente, pasando por
+                        agencias de publicidad digital y empresas de tecnología o consultoría y trabajando como
+                        Freelancer.
                       </p>
                     </div>
                   </div>
@@ -349,9 +392,9 @@
                 <div class="row pt-xl-5 mt-xl-0 mt-3">
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-html5 mr-3 text-secondary" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-html5 mr-3" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-secondary">HTML5 </p>
+                        <p class="">HTML5 </p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 95%">95%</div>
@@ -361,9 +404,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-css3-alt mr-3 text-secondary" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-css3-alt mr-3" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-secondary">CSS3</p>
+                        <p class="">CSS3</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
@@ -373,9 +416,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-js mr-3 text-secondary" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-js mr-3" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-secondary">JavaScript</p>
+                        <p class="">JavaScript</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
@@ -385,9 +428,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-bootstrap mr-3 text-secondary" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-bootstrap mr-3" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-secondary">Bootstrap</p>
+                        <p class="">Bootstrap</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%">90%</div>
@@ -397,9 +440,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-sass mr-3 text-secondary" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-sass mr-3" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-secondary">Sass</p>
+                        <p class="">Sass</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
@@ -409,9 +452,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-vuejs mr-3 text-secondary" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-vuejs mr-3" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-secondary">Vue JS</p>
+                        <p class="">Vue JS</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
@@ -425,9 +468,9 @@
                 <div class="row pt-xl-5 mt-xl-0 mt-3">
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-wordpress mr-3 text-secondary" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-wordpress mr-3" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-secondary">Wordpress</p>
+                        <p class="">Wordpress</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%">80%</div>
@@ -437,9 +480,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-php mr-3 text-secondary" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-php mr-3" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-secondary">PHP</p>
+                        <p class="">PHP</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
@@ -449,9 +492,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-laravel mr-3 text-secondary" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-laravel mr-3" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-secondary">Laravel</p>
+                        <p class="">Laravel</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%</div>
@@ -461,9 +504,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-github mr-3 text-secondary" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-github mr-3" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-secondary">Github</p>
+                        <p class="">Github</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60%</div>
@@ -473,9 +516,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-git-alt mr-3 text-secondary" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-git-alt mr-3" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-secondary">Git</p>
+                        <p class="">Git</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
@@ -485,9 +528,9 @@
                   </div>
                   <div class="col-xl-4 col-12 col-sm-6 mb-5">
                     <div class="media">
-                      <i class="fab fa-figma mr-3 text-secondary" style="font-size: 2.0em;"></i>
+                      <i class="fab fa-figma mr-3" style="font-size: 2.0em;"></i>
                       <div class="media-body">
-                        <p class="font-weight-light text-secondary">Figma</p>
+                        <p class="">Figma</p>
                         <div class="progress">
                           <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 70%">70%</div>
@@ -506,10 +549,10 @@
                   data-aos-duration="1000" data-aos-offset="200">
               </div>
               <div class="buttons-about mt-xl-0 mx-auto">
-                <a class="btn btn-principal btn-rounded" data-aos="fade-up" data-aos-duration="900" data-aos-offset="90"
+                <a href="/img/CV_DD.pdf" target="_blank" class="btn btn-principal btn-rounded" data-aos="fade-up" data-aos-duration="900" data-aos-offset="90"
                   href="#">Descargar CV</a>
                 <a class="btn btn-secondary btn-rounded ml-3" data-aos="fade-up" data-aos-duration="900"
-                  data-aos-offset="100" data-scroll href="#section5">Contactar</a>
+                  data-aos-offset="90" data-scroll href="#section5">Contactar</a>
               </div>
             </div>
           </div>
@@ -706,7 +749,7 @@
         <div class="row mb-xl-5">
           <div class="col-12 pt-xl-5 mt-xl-5 mb-xl-0 pt-0 mt-0 mb-5">
             <div class="box-text text-secondary">
-              <h1 class="title-section text-light">Portafolio</h1>
+              <h1 class="title-section">Portafolio</h1>
             </div>
           </div>
         </div>
@@ -806,23 +849,22 @@
     <section class="section-cta">
       <div class="container">
         <div class="row">
-          <div class="col-xl-12 mb-5 mb-lg-5" data-aos="fadeIn" data-aos-duration="2000">
+          <div class="col-xl-12 mt-xl-5 mb-5" data-aos="fadeIn" data-aos-duration="2000">
             <div class="card-transparent bg-contact fixed-border-top card-no-border bg-gradiente">
               <div class="card-body">
                 <div class="container">
-                  <div class="row justify-content-between mt-5 mb-5">
-                    <div class="col-xl-8">
-                      <h1 class="display-4 font-weight-bold text-light title-cta mb-4">
-                        Estas decido en empezar tu proyecto? </h1>
-                      <p class="lead font-weight-light text-light">And an even
-                        wittier subheading to boot. Jumpstart
-                        your marketing efforts with this example based on Apple’s marketing pages.
+                  <div class="row justify-content-between">
+                    <div class="col-xl-8 p-xl-4">
+                      <h2 class="font-weight-bold title-cta">
+                        Estas decido en empezar tu proyecto?</h2>
+                      <p class="lead font-weight-normal">Contactame, conversemos y analizemos la mejor
+                        solución digital para tu idea o emprendimiento.
                       </p>
-                      <a class="btn btn-principal btn-rounded" data-scroll href="#section5">Escribir
-                        mensaje</a>
+                      <a class="btn btn-principal btn-rounded" data-scroll href="#section5">Conocer
+                        más</a>
                     </div>
-                    <div class="col-xl-4 d-none d-xl-block">
-                      <img src="/img/cta.svg" class="img-fluid" alt="">
+                    <div class="col-xl-3 mt-xl-3 d-none d-xl-block">
+                      <span class="ec ec-rocket ml-3" style="font-size: 6.3em;"></span>
                     </div>
                   </div>
                 </div>
@@ -837,7 +879,7 @@
         <div class="row mt-5 mt-xl-5">
           <div class="col-12 pt-xl-5 mt-xl-5 mb-xl-0 pt-0 mt-0 mb-5">
             <div class="box-text text-secondary">
-              <h1 class="title-section text-light">Contacto</h1>
+              <h1 class="title-section">Contacto</h1>
             </div>
           </div>
         </div>
@@ -853,7 +895,8 @@
                       <h4 class="text-light font-weight-secondary mt-xl-4 mt-4">Envia un mensaje</h4>
                     </div>
                     <div class="col-2 mr-xl-auto">
-                      <a href="https://wa.me/56982029354?text=Necesito%20asesoramiento%20para%20un%20proyecto%20web%20" target="_blank" style="text-decoration: none;" class="">
+                      <a href="https://wa.me/56982029354?text=Necesito%20asesoramiento%20para%20un%20proyecto%20web%20"
+                        target="_blank" style="text-decoration: none;" class="">
                         <div class="media btn-rrss">
                           <i class="fab fa-whatsapp icon-rrss" style="font-size: 3.0em; color:#fff;"></i>
                         </div>
@@ -865,13 +908,13 @@
                       <form class="text-secondary">
                         <div class="form-group">
                           <label for="exampleFormControlInput1">Nombre y apellidos</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="" required="">
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder=""
+                            required="">
                         </div>
                         <div class="form-group">
                           <label for="exampleFormControlInput1">Correo Electrónico</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="" required="">
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder=""
+                            required="">
                         </div>
                         <div class="form-group">
                           <label for="exampleFormControlSelect1">Asunto</label>
@@ -888,8 +931,8 @@
                           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
                         <div class="form-group mt-xl-5 d-flex justify-content-center">
-                          <a href="#" id="submit" type="submit" class="btn btn-principal btn-rounded" data-toggle="modal"
-                            data-target="#reservaModal">Enviar mensaje</a>
+                          <a href="#" id="submit" type="submit" class="btn btn-principal btn-rounded"
+                            data-toggle="modal" data-target="#reservaModal">Enviar mensaje</a>
                         </div>
                       </form>
                     </div>
