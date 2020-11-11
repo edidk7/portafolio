@@ -181,17 +181,6 @@ $desktop-breakpoint: 1200px;
 
 
 //Media Query mixins
-@mixin mobile {
-  @media (min-width: #{$mobile-breakpoint}) and (max-width: #{$large-mobile-breakpoint - 1}) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (min-width: #{$large-mobile-breakpoint}) and (max-width: #{$tablet-breakpoint - 1}) {
-    @content;
-  }
-}
 
 @mixin desktop {
   @media (min-width: #{$tablet-breakpoint}) and (max-width: #{$desktop-breakpoint}) {
@@ -247,14 +236,6 @@ $desktop-breakpoint: 1200px;
     height: 0;
   }
 }
-
-//Body 
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
 
 .container-section-hero {
   margin-left: auto;
