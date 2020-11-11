@@ -16,7 +16,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 9999;
+    z-index: 10;
     pointer-events: none;
 }
 
@@ -38,10 +38,11 @@
 
 
 .title-section {
+    color:#141414;
     font-family: 'Poppins', sans-serif;
-    text-shadow: 0 0 0.2em #87F, 0 0 0.5em #0575E6, 0 0 0.5em #0576e69e;
-    font-weight: 400;
-    font-size: 3.0em;
+    font-size: 500%;
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 
 .btn-rounded {
@@ -407,7 +408,7 @@ header{
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: #fff;
-    text-shadow: 0 0 0.5em #87F, 0 0 0.5em #0575E6, 0 0 0.5em #0576e69e;
+    text-shadow: 0 0 0.3em #ccc, 0 0 0.2em #141414, 0 0 0.1em #141414;
     transition: all 0.5s ease;
     background-color: transparent;
     border-bottom: 2px solid #666666;
@@ -455,8 +456,8 @@ header{
 .navbar-light .navbar-nav .nav-item .nav-link:hover,
 .navbar-light .navbar-nav .nav-item.active .nav-link{
     color: #fff;
-    text-shadow: 0 0 0.5em #87F, 0 0 0.5em #0575E6, 0 0 0.5em #0576e69e;
-} */
+    text-shadow: 0 0 0.3em #ccc, 0 0 0.2em #141414, 0 0 0.1em #141414;
+}
 
 /* .nav-item{
     font-weight: 400;
@@ -499,6 +500,45 @@ header{
     border-radius: 0;
 }
 
+*/
+
+#buttonScroll {
+    display: inline-block;
+    background-color: #141414;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #buttonScroll::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f095";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #buttonScroll:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #buttonScroll:active {
+    background-color: #555;
+  }
+  #buttonScroll.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
 /*MEDIA QUERY*/
 @media (min-width:992px) {
     /* .navbar {
@@ -527,11 +567,13 @@ header{
       }
     
     #logo-web{
-        width: 15.6rem !important;
+        width: 5.6rem !important;
     }
     .title-section{
-        font-size: 3.0em !important;
-        color: #fff !important;
+        font-size: 2.5em !important;
+        color:#141414;
+        font-weight: 800;
+        letter-spacing: 2px;
     }
     #owl-carousel-uiux button.owl-prev {
         display: none !important;
