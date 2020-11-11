@@ -113,13 +113,13 @@ function navBarDesktop(){
     if (scroll < 50) {
         console.log("muestra la wea");
         $('.fixed-top').css('background', 'transparent');
-        $('.fixed-top').css('transition', 'all 0.1s ease-in-out 0s');
+        $('.fixed-top').css('transition', 'all 0.3s ease-in-out 0s');
         $('.fixed-top').css('border-bottom', '0px solid #fff');
     } else {
         $('.fixed-top').css('background', '#191919');
         $('.fixed-top').css('color', '#fff');
         $('.fixed-top').css('border-bottom', '1px solid #8393B4');
-        $('.fixed-top').css('transition', 'all 0.4s ease-in-out 0s');
+        $('.fixed-top').css('transition', 'all 0.5s ease-in-out 0s');
 
     }
 });
