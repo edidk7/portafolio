@@ -93,23 +93,157 @@
         background-size: cover;
     }
 }
-.section-skills{
-    padding: 0px 0px;
-    background-color: #0C0F14;
-    background-size: cover;
-}
 .section-works {
     padding: 110px 0px;
     background-color: #fff;
     background-size: cover;
 }
-
-.section-maquetacion {
-    padding: 200px 0px;
-    background-color: #fff;
-    background-size: cover;
-}
-
+/* Portfolio Section
+--------------------------------*/
+section4{
+    padding: 60px 0;
+  }
+  
+  #section4 #portfolio-flters {
+    padding: 0;
+    margin: 5px 0 35px 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  #section4 #portfolio-flters li {
+    cursor: pointer;
+    margin: 15px 15px 15px 0;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #666666;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background: #fff;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #section4 #portfolio-flters li:hover, #section4 #portfolio-flters li.filter-active {
+    background: #141414;
+    color: #fff;
+    border-radius: 10em;
+  }
+  
+  #section4 #portfolio-flters li:last-child {
+    margin-right: 0;
+  }
+  
+  #section4 .portfolio-wrap {
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+  }
+  
+  #section4 .portfolio-wrap:hover {
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+  }
+  
+  #section4 .portfolio-item {
+    position: relative;
+    height: 360px;
+    overflow: hidden;
+  }
+  
+  #section4 .portfolio-item figure {
+    background: #000;
+    overflow: hidden;
+    height: 240px;
+    position: relative;
+    border-radius: 4px 4px 0 0;
+    margin: 0;
+  }
+  
+  #section4 .portfolio-item figure:hover img {
+    opacity: 0.4;
+    transition: 0.3s;
+  }
+  
+  #section4 .portfolio-item figure .link-preview, #section4 .portfolio-item figure .link-details {
+    position: absolute;
+    display: inline-block;
+    opacity: 0;
+    line-height: 1;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.2s linear;
+  }
+  
+  #section4 .portfolio-item figure .link-preview i, #section4 .portfolio-item figure .link-details i {
+    padding-top: 6px;
+    font-size: 22px;
+    color: #333;
+  }
+  
+  #section4 .portfolio-item figure .link-preview:hover, #section4 .portfolio-item figure .link-details:hover {
+    background: #6c757d;
+  }
+  
+  #section4 .portfolio-item figure .link-preview:hover i, #section4 .portfolio-item figure .link-details:hover i {
+    color: #fff;
+  }
+  
+  #section4 .portfolio-item figure .link-preview {
+    left: calc(50% - 38px);
+    top: calc(50% - 18px);
+  }
+  
+  #section4 .portfolio-item figure .link-details {
+    right: calc(50% - 38px);
+    top: calc(50% - 18px);
+  }
+  
+  #section4 .portfolio-item figure:hover .link-preview {
+    opacity: 1;
+    left: calc(50% - 44px);
+  }
+  
+  #section4 .portfolio-item figure:hover .link-details {
+    opacity: 1;
+    right: calc(50% - 44px);
+  }
+  
+  #section4 .portfolio-item .portfolio-info {
+    background: #fff;
+    text-align: center;
+    padding: 30px;
+    height: 90px;
+    border-radius: 0 0 3px 3px;
+  }
+  
+  #section4 .portfolio-item .portfolio-info h4 {
+    font-size: 18px;
+    line-height: 1px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    padding-bottom: 0;
+  }
+  
+  #section4 .portfolio-item .portfolio-info h4 a {
+    color: #333;
+  }
+  
+  #section4 .portfolio-item .portfolio-info h4 a:hover {
+    color: #18d26e;
+  }
+  
+  #section4 .portfolio-item .portfolio-info p {
+    padding: 0;
+    margin: 0;
+    color: #b8b8b8;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
 .section-cta {
     background-color: #fff;
     background-size: cover;
