@@ -137,12 +137,12 @@ section4{
   }
   
   #section4 .portfolio-wrap {
-    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    /* box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08); */
     transition: 0.3s;
   }
   
   #section4 .portfolio-wrap:hover {
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+    /* box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16); */
   }
   
   #section4 .portfolio-item {
@@ -152,7 +152,7 @@ section4{
   }
   
   #section4 .portfolio-item figure {
-    background: #000;
+    /* background: #000; */
     overflow: hidden;
     height: 240px;
     position: relative;
@@ -525,6 +525,10 @@ section4{
     width: 100px !important;
     height: 40px !important;
     transition: all 0.4s ease-in-out 0s;
+}
+
+.addColorWhite{
+    color: #fff !important;
 }
 
 .logo {
