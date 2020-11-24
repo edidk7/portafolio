@@ -13,6 +13,7 @@ $(document).ready(function() {
 
     navBarDesktop();
     effectToWritte();
+    sliderAbout();
     buttonScroll();
     moveElementMouse();
     portfolioFilter();
@@ -30,70 +31,33 @@ $(document).ready(function() {
       keyboardScrolling:true
     })
 
-    $('#owl-carousel-about').owlCarousel({
-      autoplay: false,
-      autoplayHoverPaused: false,
-      items: 1,
-      margin:2,
-      autoplayTimeout:10000,
-      nav: false,
-      dots: false,
-      loop: false,
-      dots: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 1
-        },
-        1000: {
-          items: 1
-        }
-      }
-    });
-    $('#owl-carousel-uiux').owlCarousel({
-        autoplay: false,
-        autoplayHoverPaused: false,
-        items: 1,
-        nav: true,
-        dots: false,
-        loop: true,
-        dots: false,
-        responsive: {
-          0: {
-            items: 1
-          },
-          600: {
-            items: 1
-          },
-          1000: {
-            items: 1
-          }
-        }
-      });
-      $('#owl-carousel-maquetacion').owlCarousel({
-        autoplay: true,
-        autoplayHoverPaused: true,
-        items: 4,
-        nav: false,
-        dots: false,
-        loop: true,
-        dots: true,
-        responsive: {
-          0: {
-            items: 1
-          },
-          600: {
-            items: 1
-          },
-          1000: {
-            items: 1
-          }
-        }
-      });
-
 });
+
+function sliderAbout(){
+
+  $('#owl-carousel-about').owlCarousel({
+    autoplay: false,
+    autoplayHoverPaused: false,
+    items: 1,
+    margin:2,
+    autoplayTimeout:10000,
+    nav: false,
+    dots: false,
+    loop: false,
+    dots: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      1000: {
+        items: 1
+      }
+    }
+  });
+}
 
 function moveElementMouse(){
   var object1=$('#object1');
