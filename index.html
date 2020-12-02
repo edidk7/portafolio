@@ -85,7 +85,7 @@
         <!-- Menu -->
         <div id="menu" class="">
           <ul class="pt-3 mt-5 mb-5 text-right">
-            <li class="nav-item"><a class="nav-link active" data-scroll href="#section1" class="">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active"    href="#section1" class="">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" data-scroll href="#section2" class="">Servicios</a></li>
             <li class="nav-item"><a class="nav-link" data-scroll href="#section3" class="">Sobre mí</a></li>
             <li class="nav-item"><a class="nav-link" data-scroll href="#section4" class="">Portafolio</a></li>
@@ -776,34 +776,31 @@
                   </div>
                   <div class="row justify-content-between mt-5 mb-1">
                     <div class="col-12">
-                      <form class="text-secondary">
+                      <form class="form form-validate text-secondary" onsubmit="return myFunction(); " id="formContactanos" novalidate="novalidate">
                         <div class="form-group">
                           <label for="exampleFormControlInput1">Nombre y apellidos</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder=""
-                            required="">
+                          <input id="nombre" name="nombre" type="text" class="form-control" placeholder="" required=" ">
                         </div>
                         <div class="form-group">
                           <label for="exampleFormControlInput1">Correo Electrónico</label>
-                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder=""
-                            required="">
+                          <input id="email" name="email" type="email" class="form-control" placeholder="" required=" ">
                         </div>
                         <div class="form-group">
-                          <label for="exampleFormControlSelect1">Asunto</label>
-                          <select class="form-control" id="exampleFormControlSelect1">
+                          <label for="asunto">Asunto</label>
+                          <select id="asunto" name="asunto" class="form-control" required=" ">
                             <option>Asesoramiento</option>
-                            <option>Proyecto Fron-end</option>
-                            <option>Proyecto Fron-end</option>
+                            <option>Pagina web</option>
+                            <option>Aplicación web</option>
                             <option>Oferta Laboral</option>
                             <option>Otros...</option>
                           </select>
                         </div>
                         <div class="form-group">
                           <label for="exampleFormControlTextarea1">Mensaje</label>
-                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          <textarea id="mensaje" class="form-control" name="mensaje" rows="3 " placeholder="..." required=" "></textarea>
                         </div>
                         <div class="form-group mt-xl-5 d-flex justify-content-center">
-                          <a href="#" id="submit" type="submit" class="btn btn-principal btn-rounded"
-                            data-toggle="modal" data-target="#reservaModal">Enviar mensaje</a>
+                          <button id="btn_contactanos" class="btn btn-principal btn-rounded">Enviar mensaje</button>
                         </div>
                       </form>
                     </div>
@@ -878,13 +875,16 @@
   <script src="assets/library/owl.carousel.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/menu.js"></script>
+  <script src="assets/contact/contact.js"></script>
   <script src="assets/library/isotope.pkgd.min.js"></script>
   <script src="assets/library/venobox.min.js"></script>
   <!-- Smooth-Scroll -->
   <script src="assets/js/smooth-scroll.min.js"></script>
+  <!-- SweetAlert -->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
   <script>
     smoothScroll.init({
-      selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
+      selector: '[  ]', // Selector for links (must be a class, ID, data attribute, or element tag)
       selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
       speed: 2500, // Integer. How fast to complete the scroll in milliseconds
       easing: 'easeInOutCubic', // Easing pattern to use
