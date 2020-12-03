@@ -1,6 +1,7 @@
 :root {
   font-family: 'Poppins', sans-serif;
   --principal: #141414;
+  --secondary: #ccc;
   --blue: #1e90ff;
 }
 
@@ -32,12 +33,11 @@
 .btn-principal:hover {
   background-color: #ffffff !important;
   color: var(--principal);
+  font-weight: 400;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  text-shadow: 0 0 0.2em #fff, 0 0 0.5em #0575E6, 0 0 0.5em #0576e69e;
   -webkit-box-shadow: 0 0 0.2em #fff, 0 0 0.5em #0575E6, 0 0 0.5em #0576e69e;
           box-shadow: 0 0 0.2em #fff, 0 0 0.5em #0575E6, 0 0 0.5em #0576e69e;
-  border-color: var(--principal);
   -webkit-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
 }
