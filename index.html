@@ -85,7 +85,7 @@
         <!-- Menu -->
         <div id="menu" class="">
           <ul class="pt-3 mt-5 mb-5 text-right">
-            <li class="nav-item"><a class="nav-link active"    href="#section1" class="">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" data-scroll href="#section1" class="">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" data-scroll href="#section2" class="">Servicios</a></li>
             <li class="nav-item"><a class="nav-link" data-scroll href="#section3" class="">Sobre mí</a></li>
             <li class="nav-item"><a class="nav-link" data-scroll href="#section4" class="">Portafolio</a></li>
@@ -884,7 +884,7 @@
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
   <script>
     smoothScroll.init({
-      selector: '[  ]', // Selector for links (must be a class, ID, data attribute, or element tag)
+      selector: '[data-scroll]', // Selector for links (must be a class, ID, data attribute, or element tag)
       selectorHeader: null, // Selector for fixed headers (must be a valid CSS selector) [optional]
       speed: 2500, // Integer. How fast to complete the scroll in milliseconds
       easing: 'easeInOutCubic', // Easing pattern to use
