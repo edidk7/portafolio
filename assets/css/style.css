@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;0,900;1,100&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&display=swap'); */
 /* .navbar{
     background: #4B6CB7 !important;
     transition: all 0.2s;;
 } */
 
 *{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'open sans';
+    color:#6a6866;
 }
 #particles-header {
     position: relative;
@@ -46,9 +47,9 @@
 
 
 .title-section {
-    color:#141414;
-    font-family: 'Poppins', sans-serif;
-    font-size: 500%;
+    color: #2a2725;
+    font-family: 'open sans';
+    font-size: 56px;
     font-weight: 800;
     letter-spacing: 2px;
 }
@@ -59,10 +60,41 @@
 
 .section-hero {
     padding: 9.4em 0px;
-    background-color: #fff; 
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 420px;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, hsla(219, 41%, 13%, 0.611)), url(../img/w1.jpeg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, hsla(219, 41%, 13%, 0.604)), url(../img/w1.jpeg);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
-    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+.titulo-hero{
+    font-size: 85px;
+    color: #fff;
+}
+.subtitulo {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 32px;
+    color: #fff;
+}
+
+.boton-hero {
+    display: inline-block;
+    padding: 6px;
+    width: 128px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 16px;
 }
 
 .bg-shadow{
@@ -95,23 +127,33 @@
 }
 .section-works {
     /* padding: 110px 0px; */
-    background-color: #fff;
+    
+    width: 100%;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, hsla(219, 05%, 13%, 0.611)), url(../img/wire.png);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, hsla(219, 05%, 13%, 0.604)), url(../img/wire.png);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
 }
 /* Portfolio Section
 --------------------------------*/
-section4{
+.section6{
     padding: 60px 0;
   }
   
-  #section4 #portfolio-flters {
+  #section6 #portfolio-flters {
     padding: 0;
     margin: 5px 0 35px 0;
     list-style: none;
     text-align: center;
   }
   
-  #section4 #portfolio-flters li {
+  #section6 #portfolio-flters li {
     cursor: pointer;
     margin: 15px 15px 15px 0;
     display: inline-block;
@@ -119,39 +161,39 @@ section4{
     font-size: 12px;
     line-height: 20px;
     color: #666666;
-    border-radius: 4px;
+    border-radius: 10em;
     text-transform: uppercase;
     background: #fff;
     margin-bottom: 5px;
     transition: all 0.3s ease-in-out;
   }
   
-  #section4 #portfolio-flters li:hover, #section4 #portfolio-flters li.filter-active {
+  #section6 #portfolio-flters li:hover, #section6 #portfolio-flters li.filter-active {
     background: #141414;
     color: #fff;
     border-radius: 10em;
   }
   
-  #section4 #portfolio-flters li:last-child {
+  #section6 #portfolio-flters li:last-child {
     margin-right: 0;
   }
   
-  #section4 .portfolio-wrap {
+  #section6 .portfolio-wrap {
     /* box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08); */
     transition: 0.3s;
   }
   
-  #section4 .portfolio-wrap:hover {
+  #section6 .portfolio-wrap:hover {
     /* box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16); */
   }
   
-  #section4 .portfolio-item {
+  #section6 .portfolio-item {
     position: relative;
     height: 360px;
     overflow: hidden;
   }
   
-  #section4 .portfolio-item figure {
+  #section6 .portfolio-item figure {
     /* background: #000; */
     overflow: hidden;
     height: 240px;
@@ -160,12 +202,12 @@ section4{
     margin: 0;
   }
   
-  #section4 .portfolio-item figure:hover img {
+  #section6 .portfolio-item figure:hover img {
     opacity: 0.4;
     transition: 0.3s;
   }
   
-  #section4 .portfolio-item figure .link-preview, #section4 .portfolio-item figure .link-details {
+  #section6 .portfolio-item figure .link-preview, #section6 .portfolio-item figure .link-details {
     position: absolute;
     display: inline-block;
     opacity: 0;
@@ -178,41 +220,41 @@ section4{
     transition: 0.2s linear;
   }
   
-  #section4 .portfolio-item figure .link-preview i, #section4 .portfolio-item figure .link-details i {
+  #section6 .portfolio-item figure .link-preview i, #section6 .portfolio-item figure .link-details i {
     padding-top: 6px;
     font-size: 22px;
     color: #333;
   }
   
-  #section4 .portfolio-item figure .link-preview:hover, #section4 .portfolio-item figure .link-details:hover {
+  #section6 .portfolio-item figure .link-preview:hover, #section6 .portfolio-item figure .link-details:hover {
     background: #6c757d;
   }
   
-  #section4 .portfolio-item figure .link-preview:hover i, #section4 .portfolio-item figure .link-details:hover i {
+  #section6 .portfolio-item figure .link-preview:hover i, #section6 .portfolio-item figure .link-details:hover i {
     color: #fff;
   }
   
-  #section4 .portfolio-item figure .link-preview {
+  #section6 .portfolio-item figure .link-preview {
     left: calc(50% - 38px);
     top: calc(50% - 18px);
   }
   
-  #section4 .portfolio-item figure .link-details {
+  #section6 .portfolio-item figure .link-details {
     right: calc(50% - 38px);
     top: calc(50% - 18px);
   }
   
-  #section4 .portfolio-item figure:hover .link-preview {
+  #section6 .portfolio-item figure:hover .link-preview {
     opacity: 1;
     left: calc(50% - 44px);
   }
   
-  #section4 .portfolio-item figure:hover .link-details {
+  #section6 .portfolio-item figure:hover .link-details {
     opacity: 1;
     right: calc(50% - 44px);
   }
   
-  #section4 .portfolio-item .portfolio-info {
+  #section6 .portfolio-item .portfolio-info {
     background: #fff;
     text-align: center;
     padding: 30px;
@@ -220,7 +262,7 @@ section4{
     border-radius: 0 0 3px 3px;
   }
   
-  #section4 .portfolio-item .portfolio-info h4 {
+  #section6 .portfolio-item .portfolio-info h4 {
     font-size: 18px;
     line-height: 1px;
     font-weight: 700;
@@ -228,15 +270,15 @@ section4{
     padding-bottom: 0;
   }
   
-  #section4 .portfolio-item .portfolio-info h4 a {
+  #section6 .portfolio-item .portfolio-info h4 a {
     color: #333;
   }
   
-  #section4 .portfolio-item .portfolio-info h4 a:hover {
+  #section6 .portfolio-item .portfolio-info h4 a:hover {
     color: #18d26e;
   }
   
-  #section4 .portfolio-item .portfolio-info p {
+  #section6 .portfolio-item .portfolio-info p {
     padding: 0;
     margin: 0;
     color: #b8b8b8;
@@ -645,8 +687,9 @@ header{
 
         /* Menu */
         .navbar-light .navbar-toggler {
-            color: #ccc;
-            border-color: #ccc;
+            color: #fff;
+            border-color: #fff;
+            background-color: #fff;
             -webkit-box-shadow: -1px -1px 10px -3px rgba(0,0,0,0.75);
             -moz-box-shadow: -1px -1px 10px -3px rgba(0,0,0,0.75);
             box-shadow: -1px -1px 10px -3px rgba(0,0,0,0.75);
@@ -879,6 +922,11 @@ header{
 
 @media (max-width:992px){
 
+    .text-responsive-center{
+        
+        text-align: justify !important;
+    }
+
     /* .navbar{
         background: #fff;
     }
@@ -892,6 +940,12 @@ header{
     
     #logo-web{
         width: 5.6rem !important;
+    }
+    .titulo-hero{
+        font-size: 2.5em !important;
+    }
+    .subtitulo{
+        font-size: 1.6em !important;
     }
     .title-section{
         font-size: 2.1em !important;
