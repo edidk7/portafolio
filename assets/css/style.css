@@ -1,11 +1,11 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&display=swap');
 /* .navbar{
     background: #4B6CB7 !important;
     transition: all 0.2s;;
 } */
 
 *{
-    font-family: 'open sans';
+    font-family: 'Roboto', sans-serif;
     color:#6a6866;
 }
 #particles-header {
@@ -48,10 +48,34 @@
 
 .title-section {
     color: #2a2725;
-    font-family: 'open sans';
+    font-family: 'Roboto', sans-serif;
     font-size: 56px;
     font-weight: 800;
     letter-spacing: 2px;
+    position: relative;
+    margin: 10px;
+}
+
+.title-section::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: -14px;
+    left: calc(50% - 60px);
+}
+
+.title-section::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #2a2725;
+    bottom: -15px;
+    left: calc(50% - 20px);
 }
 
 .btn-rounded {
@@ -921,6 +945,21 @@ header{
 }
 
 @media (max-width:992px){
+
+    .section-hero {
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #243B55, hsla(219, 41%, 13%, 0.611)), url(../img/w1r.png);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, hsla(219, 41%, 13%, 0.604)), url(../img/w1r.png);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+    .section-works {
+        background: -webkit-linear-gradient(to right, #243B55, hsla(219, 05%, 13%, 0.611)), url(../img/wireres.png);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #243B55, hsla(219, 05%, 13%, 0.604)), url(../img/wireres.png);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
 
     .text-responsive-center{
         
